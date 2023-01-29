@@ -8,13 +8,13 @@
 
 /* color del sitio */
 body {
-    background: rgb(205, 238, 248);
+    background-image: linear-gradient(to bottom, rgb(205, 238, 248), rgb(79, 205, 247));
     font-family: 'Montserrat', sans-serif;
 }
 
 
 /* color del header */
-header { 
+header {
     background: lightblue;
     display: flex;
     justify-content: space-between;
@@ -31,13 +31,13 @@ header nav ul {
     list-style: none;
     display: flex;
     gap: 1.1rem;
-    }
+}
 
 
 header nav ul li {
     background: lightskyblue;
-    padding: 0.63rem;
-    border-radius: 0.63rem;
+    padding: 0.40rem;
+    border-radius: 0.80rem;
     margin-top: 1.26rem;
     font-weight: bold;
 }
@@ -47,24 +47,12 @@ header nav ul li a {
     text-decoration: none;
 }
 
-/* menu mobie */
-.menu-hamburguesa{
-    display: none;
-}
 
-/* logo de la marca */
-.logo-home img {
-    padding: 0.6rem;
-    margin-right: 0.7rem;
-}
-
-
-/* nombre del sitio */
-.nombre-sitio {
-text-align: center;
-margin-top: 1.7rem;
-margin-right: 1.4rem;
-font-size: 1.4rem;
+.nombre-logo {
+    font-weight: bold;
+    font-size: 120%;
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
 
 /* logos de registrarse y carrito de compras */
@@ -76,8 +64,8 @@ font-size: 1.4rem;
 }
 
 .logos img {
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 1.8rem;
+    height: 1.8rem;
 }
 
 
@@ -91,7 +79,7 @@ main h1 {
 
 
 /* pagina home */
-.slider-principal img{
+.slider-principal img {
     width: 100%;
     height: 100%;
 }
@@ -108,28 +96,29 @@ main h1 {
     text-align: center;
     margin: 0.63rem 0 1.26rem 0;
     text-decoration: underline;
+    font-size: 190%;
 }
 
 
 /* tamaño de las tarjetas de las categorias de la home */
 .tarjeta-categoria {
-    width:33%; 
+    width: 33%;
     padding: 0.63rem;
 }
 
 
-/* estilos de las tarjetas Home */ 
-.categorias{
-    width:100%; 
-    display: flex; 
-    justify-content: center; 
+/* estilos de las tarjetas Home */
+.categorias {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 
 /* estilos de textos tarjetas Home */
-.texto-tarjeta{
-    text-align:center;
+.texto-tarjeta {
+    text-align: center;
     font-weight: bold;
     font-size: 1.26rem;
 }
@@ -144,34 +133,46 @@ main h1 {
 
 
 /* titulos de las paginas nosotros-tienda-dudas-contacto */
-.biografia-sitio, .tienda-sitio, .dudas-sitio, .contacto-sitio {
+.titulo-sitio,
+.tienda-sitio,
+.dudas-sitio,
+.contacto-sitio {
     margin: 0.32rem 0.32rem 1.26rem 0.32rem;
     text-align: center;
+    font-size: 200%;
 }
+
 
 /* estilos Tienda */
 .tienda-categorias {
-margin-bottom: 1.26rem;
+    margin-bottom: 1.26rem;
 }
 
 /* estilos de banners de la Tienda */
-.banner-tienda-uno img, .banner-tienda-dos img, .banner-tienda-tres img {
+.banner-tienda-uno img,
+.banner-tienda-dos img,
+.banner-tienda-tres img {
     width: 100%;
     height: 100%;
 }
 
 
 /* estilos tarjetas Tienda */
-.categoria-peces-frios, .categoria-peces-tropicales, .categoria-accesorios {
-    display: grid; 
+.categoria-peces-frios,
+.categoria-peces-tropicales,
+.categoria-accesorios {
+    display: grid;
     grid-template-columns: 0.4fr 0.4fr 0.4fr;
     grid-template-rows: 1fr;
+    padding: 2rem;
+    justify-items: center;
 }
 
 
-.peces-frios img, .peces-tropicales img, .accesorios-peceras img {
+.peces-frios img,
+.peces-tropicales img,
+.accesorios-peceras img {
     height: 15rem;
-    margin: 0.63rem 1.26rem 0.32rem 3.50rem;
 }
 
 /* titulo del producto */
@@ -186,7 +187,7 @@ margin-bottom: 1.26rem;
 /* titulo del precio */
 .titulo-del-precio {
     text-align: center;
-    margin-bottom: 0.95rem;
+    margin-bottom: 0.9rem;
     font-weight: bolder;
 }
 
@@ -196,11 +197,28 @@ margin-bottom: 1.26rem;
     padding: 1.58rem;
     list-style: none;
     margin-bottom: 4.41rem;
+    font-size: 140%;
 }
 
 main ul li ul li {
     list-style: none;
 }
+
+
+/* estilo del contenido de la pagina nosotros*/
+.biografia-sitio {
+    margin: 0.32rem 0.32rem 1.26rem 0.32rem;
+    text-align: center;
+    font-size: 140%;
+}
+
+
+/* estilo de la imagen de la biografia */
+.imagen-biografia img {
+    padding: 1rem;
+    border-radius: 3.15rem;
+}
+
 
 /* pagina nosotros-video de la biografia */
 .video-biografia {
@@ -211,30 +229,27 @@ main ul li ul li {
     margin-bottom: 1.26rem;
 }
 
-/* estilo de la imagen de la biografia */
-.imagen-biografia img {
-    padding: 1.14rem;
-    border-radius: 3.15rem;
-}
+
 
 /* pagina contacto */
-.contacto-uno {
+.contacto-uno p {
     padding: 0.63rem;
+    font-size: 130%;
 }
 
 
 /* estilo del formulario */
 .fieldset {
-  width: 12%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  border: none;
-  gap: 0.32rem;
-  margin-top: 1.26rem;
-  margin-bottom: 1.89rem;
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: none;
+    gap: 0.32rem;
+    margin-top: 1.26rem;
+    margin-bottom: 1.89rem;
 }
 
 .fieldset input {
@@ -242,19 +257,20 @@ main ul li ul li {
     border: none;
     padding: 0.38rem;
     outline: none;
-    width: 100%;
+    width: 140%;
 }
 
 
-.fieldset .boton-enviar, .fieldset .boton-borrar {
+.fieldset .boton-enviar,
+.fieldset .boton-borrar {
     padding: 0.76rem;
 }
 
 /* estilos del footer */
 
 footer {
-    background: lightblue;
-    padding: 0,32rem;
+    background: lightskyblue;
+    padding: 0, 32rem;
 }
 
 /* estilo de los link´s del footer */
@@ -268,11 +284,271 @@ footer div h2 {
     padding: 0.19rem;
     margin-top: 0.38rem;
 }
+
 /* footer legales */
 .footer-legales {
-    background: lightskyblue;
+    background: rgb(180, 225, 255);
     text-align: center;
     margin-top: 1.89rem;
+}
+
+
+
+
+
+
+/* responsive para tablet */
+
+
+@media screen and (max-width:1130px) {
+
+    /* color del sitio */
+    body {
+        background-image: linear-gradient(to bottom, rgb(205, 238, 248), rgb(79, 205, 247));
+        font-family: 'Montserrat', sans-serif;
+    }
+
+
+    /* color del header */
+    header {
+        background: lightblue;
+        display: flex;
+    }
+
+
+    /* logos de registrarse y carrito de compras */
+    .logos {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .logos img {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+
+    /* titulos de las paginas */
+    main h1 {
+        text-align: center;
+        background-color: lightskyblue;
+        margin-top: 0.1rem;
+        margin-bottom: 1.26rem;
+    }
+
+
+
+    /* pagina home */
+    .slider-principal img {
+        display: block;
+    }
+
+
+    /* slider principal mobie */
+    .slider-principal-mobie img {
+        display: none;
+    }
+
+    /* titulo de las categorias de la home */
+    .titulo-categorias {
+        text-align: center;
+        margin: 0.2rem 0 1.1rem 0;
+        text-decoration: underline;
+    }
+
+
+    /* tamaño de las tarjetas de las categorias de la home */
+    .tarjeta-categoria {
+        width: 33%;
+        padding: 0.63rem;
+    }
+
+
+    /* estilos de las tarjetas Home */
+    .categorias {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* estilos de textos tarjetas Home */
+    .texto-tarjeta {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.26rem;
+    }
+
+
+    /* cinta de la home */
+    .cinta {
+        background-color: lightskyblue;
+        margin-bottom: 1.26rem;
+        font-size: larger;
+        padding: 0.5rem;
+    }
+
+    /* estilo del contenido de la pagina nosotros*/
+    .biografia-sitio {
+        margin: 0.32rem 0.32rem 1.26rem 0.32rem;
+        text-align: center;
+    }
+
+    /* titulos de las paginas nosotros-tienda-dudas-contacto */
+    .titulo-sitio,
+    .tienda-sitio,
+    .dudas-sitio,
+    .contacto-sitio {
+        margin: 0.32rem 0.32rem 1.26rem 0.32rem;
+        text-align: center;
+        font-size: 180%;
+    }
+
+    /* estilos Tienda */
+    .tienda-categorias {
+        margin-bottom: 1.26rem;
+    }
+
+    /* estilos de banners de la Tienda */
+    .banner-tienda-uno img,
+    .banner-tienda-dos img,
+    .banner-tienda-tres img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* estilos tarjetas Tienda */
+    .categoria-peces-frios,
+    .categoria-peces-tropicales,
+    .categoria-accesorios {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .peces-frios img,
+    .peces-tropicales img,
+    .accesorios-peceras img {
+        height: 13rem;
+        margin: 0.63rem 0.26rem 1.32rem 0.15rem;
+    }
+
+    /* titulo del producto */
+    .descripcion-producto {
+        text-align: center;
+        font-size: 1.26rem;
+        font-weight: bold;
+        background-color: rgb(242, 253, 255);
+        border-radius: 2rem;
+        padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+    }
+
+
+    /* titulo del precio */
+    .titulo-del-precio {
+        text-align: center;
+        font-weight: bolder;
+        margin-top: 0.5rem;
+        margin-bottom: 0.80rem;
+    }
+
+
+    /* pagina dudas */
+    .preguntas {
+        padding: 1.58rem;
+        list-style: none;
+        margin-bottom: 2rem;
+        font-size: 120%;
+    }
+
+    main ul li ul li {
+        list-style: none;
+    }
+
+    /* pagina nosotros-video de la biografia */
+    .video-biografia {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.26rem;
+    }
+
+    /* estilo de la imagen de la biografia */
+    .imagen-biografia img {
+        width: 100%;
+        padding: 1.14rem;
+        border-radius: 3.15rem;
+    }
+
+    /* pagina contacto */
+    .contacto-uno p {
+        padding: 0.63rem;
+        font-size: 110%;
+    }
+
+
+    /* estilo del formulario */
+    .fieldset {
+        width: 12%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border: none;
+        gap: 0.32rem;
+        margin-top: 1.26rem;
+        margin-bottom: 1.89rem;
+    }
+
+    .fieldset input {
+        border-radius: 0.51rem;
+        border: none;
+        padding: 0.38rem;
+        outline: none;
+        width: 200%;
+    }
+
+
+    .fieldset .boton-enviar,
+    .fieldset .boton-borrar {
+        padding: 0.76rem;
+    }
+
+    /* estilos del footer */
+
+    footer {
+        background: lightblue;
+        padding: 0.6rem;
+    }
+
+    /* estilo de los link´s del footer */
+    footer div ul {
+        list-style: none;
+        padding: 0.19rem;
+    }
+
+    /* titulo del footer */
+    footer div h2 {
+        padding: 0.19rem;
+        margin-top: 0.38rem;
+    }
+
+    /* footer legales */
+    .footer-legales {
+        background: rgb(180, 225, 255);
+        text-align: center;
+        margin-top: 1.89rem;
+    }
+
 }
 
 
@@ -283,269 +559,251 @@ footer div h2 {
 /* responsive para celular */
 
 
-@media screen and (max-width:599px){
-   
-/* color del sitio */
-body {
-    background: rgb(205, 238, 248);
-    font-family: 'Montserrat', sans-serif;
-}
+@media screen and (max-width:768px) {
 
-
-/* color del header */
-header { 
-    background: lightblue;
-    display: flex;
-}
-
-
-/* barra de navegacion */
-header nav ul {
-    display: none;
+    /* color del sitio */
+    body {
+        background-image: linear-gradient(to bottom, rgb(205, 238, 248), rgb(79, 205, 247));
+        font-family: 'Montserrat', sans-serif;
     }
 
 
-header nav ul li {
-   display: none;
-}
+    /* color del header */
+    header {
+        background: lightblue;
+        display: flex;
+    }
 
 
-header nav ul li a {
-    display: none;
-}
+    /* logos de registrarse y carrito de compras */
+    .logos {
+        display: none;
+    }
+
+    .logos img {
+        display: none;
+    }
 
 
-/* menu hamburguesa */
-.menu-hamburguesa {
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1.5rem;
-}
-
-.menu-hamburguesa img {
-    width: 1.7rem;
-    height: 1.7rem;
-}
-
-
-/* nombre del sitio */
-.nombre-sitio {
-    display: none;
-}
-
-
-/* logos de registrarse y carrito de compras */
-.logos {
-   display: none;
-}
-
-.logos img {
-    width: 1rem;
-    height: 1rem;
-}
-
-
-/* titulos de las paginas */
-main h1 {
-    text-align: center;
-    background-color: lightskyblue;
-    margin-top: 0.1rem;
-    margin-bottom: 1.26rem;
-}
+    /* titulos de las paginas */
+    main h1 {
+        text-align: center;
+        background-color: lightskyblue;
+        margin-top: 0.1rem;
+        margin-bottom: 1.26rem;
+    }
 
 
 
-/* pagina home */
-.slider-principal img{
-    display: none;
-}
+    /* pagina home */
+    .slider-principal img {
+        display: none;
+    }
 
 
-/* slider principal mobie */
-.slider-principal-mobie img{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
+    /* slider principal mobie */
+    .slider-principal-mobie img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 
-/* titulo de las categorias de la home */
-.titulo-categorias {
-    text-align: center;
-    margin: 0.2rem 0 1.1rem 0;
-    text-decoration: underline;
-}
-
-
-/* tamaño de las tarjetas de las categorias de la home */
-.tarjeta-categoria {
-    width: 100%; 
-    padding: 0.63rem;
-}
+    /* titulo de las categorias de la home */
+    .titulo-categorias {
+        text-align: center;
+        margin: 0.2rem 0 1.1rem 0;
+        text-decoration: underline;
+    }
 
 
-/* estilos de las tarjetas Home */ 
-.categorias{
-    width:100%; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    flex-direction: column;
-}
+    /* tamaño de las tarjetas de las categorias de la home */
+    .tarjeta-categoria {
+        width: 100%;
+        padding: 0.63rem;
+    }
 
 
-/* estilos de textos tarjetas Home */
-.texto-tarjeta{
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.26rem;
-}
+    /* estilos de las tarjetas Home */
+    .categorias {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
 
-/* cinta de la home */
-.cinta {
-    background-color: lightskyblue;
-    margin-bottom: 1.26rem;
-    font-size:larger;
-    padding: 0.5rem;
-}
-
-/* titulos de las paginas nosotros-tienda-dudas-contacto */
-.biografia-sitio, .tienda-sitio, .dudas-sitio, .contacto-sitio {
-    margin: 0.32rem 0.32rem 1.26rem 0.32rem;
-    text-align: center;
-}
-
-/* estilos Tienda */
-.tienda-categorias {
-margin-bottom: 1.26rem;
-}
-
-/* estilos de banners de la Tienda */
-.banner-tienda-uno img, .banner-tienda-dos img, .banner-tienda-tres img {
-    width: 100%;
-    height: 100%;
-}
+    /* estilos de textos tarjetas Home */
+    .texto-tarjeta {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.26rem;
+    }
 
 
-/* estilos tarjetas Tienda */
-.categoria-peces-frios, .categoria-peces-tropicales, .categoria-accesorios {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+    /* cinta de la home */
+    .cinta {
+        background-color: lightskyblue;
+        margin-bottom: 1.26rem;
+        font-size: larger;
+        padding: 0.5rem;
+    }
+
+    /* estilo del contenido de la pagina nosotros*/
+    .biografia-sitio {
+        margin: 0.32rem 0.32rem 1.26rem 0.32rem;
+        text-align: center;
+    }
+
+    /* titulos de las paginas nosotros-tienda-dudas-contacto */
+    .titulo-sitio,
+    .tienda-sitio,
+    .dudas-sitio,
+    .contacto-sitio {
+        margin: 0.32rem 0.32rem 1.26rem 0.32rem;
+        text-align: center;
+        font-size: 160%;
+    }
+
+    /* estilos Tienda */
+    .tienda-categorias {
+        margin-bottom: 1.26rem;
+    }
+
+    /* estilos de banners de la Tienda */
+    .banner-tienda-uno img,
+    .banner-tienda-dos img,
+    .banner-tienda-tres img {
+        width: 100%;
+        height: 100%;
+    }
 
 
-.peces-frios img, .peces-tropicales img, .accesorios-peceras img {
-    height: 13rem;
-    margin: 0.63rem 0.26rem 1.32rem 0.15rem;
-}
-
-/* titulo del producto */
-.descripcion-producto {
-    text-align: center;
-    font-size: 1.26rem;
-    font-weight: bold;
-    background-color: lightskyblue;
-    border-radius: 2rem;
-    padding: 0.5rem 0.2rem 0.5rem 0.2rem;
-}
+    /* estilos tarjetas Tienda */
+    .categoria-peces-frios,
+    .categoria-peces-tropicales,
+    .categoria-accesorios {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
 
-/* titulo del precio */
-.titulo-del-precio {
-    text-align: center;
-    font-weight: bolder;
-    margin-top: 0.5rem;
-    margin-bottom: 0.80rem;
-}
+    .peces-frios img,
+    .peces-tropicales img,
+    .accesorios-peceras img {
+        height: 13rem;
+        margin: 0.63rem 0.26rem 1.32rem 0.15rem;
+    }
+
+    /* titulo del producto */
+    .descripcion-producto {
+        text-align: center;
+        font-size: 1.26rem;
+        font-weight: bold;
+        background-color: rgb(242, 253, 255);
+        border-radius: 2rem;
+        padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+    }
 
 
-/* pagina dudas */
-.preguntas {
-    padding: 1.58rem;
-    list-style: none;
-    margin-bottom: 2rem;
-}
-
-main ul li ul li {
-    list-style: none;
-}
-
-/* pagina nosotros-video de la biografia */
-.video-biografia {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1.26rem;
-}
-
-/* estilo de la imagen de la biografia */
-.imagen-biografia img {
-    width: 100%;
-    padding: 1.14rem;
-    border-radius: 3.15rem;
-}
-
-/* pagina contacto */
-.contacto-uno {
-    padding: 0.63rem;
-}
+    /* titulo del precio */
+    .titulo-del-precio {
+        text-align: center;
+        font-weight: bolder;
+        margin-top: 0.5rem;
+        margin-bottom: 0.80rem;
+    }
 
 
-/* estilo del formulario */
-.fieldset {
-  width: 12%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  border: none;
-  gap: 0.32rem;
-  margin-top: 1.26rem;
-  margin-bottom: 1.89rem;
-}
+    /* pagina dudas */
+    .preguntas {
+        padding: 1.58rem;
+        list-style: none;
+        margin-bottom: 2rem;
+        font-size: 100%;
+    }
 
-.fieldset input {
-    border-radius: 0.51rem;
-    border: none;
-    padding: 0.38rem;
-    outline: none;
-    width: 100%;
-}
+    main ul li ul li {
+        list-style: none;
+    }
+
+    /* pagina nosotros-video de la biografia */
+    .video-biografia {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.26rem;
+    }
+
+    /* estilo de la imagen de la biografia */
+    .imagen-biografia img {
+        width: 100%;
+        padding: 1.14rem;
+        border-radius: 3.15rem;
+    }
+
+    /* pagina contacto */
+    .contacto-uno p {
+        padding: 0.63rem;
+        font-size: 110%;
+    }
 
 
-.fieldset .boton-enviar, .fieldset .boton-borrar {
-    padding: 0.76rem;
-}
+    /* estilo del formulario */
+    .fieldset {
+        width: 12%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border: none;
+        gap: 0.32rem;
+        margin-top: 1.26rem;
+        margin-bottom: 1.89rem;
+    }
 
-/* estilos del footer */
+    .fieldset input {
+        border-radius: 0.51rem;
+        border: none;
+        padding: 0.38rem;
+        outline: none;
+        width: 390%;
+    }
 
-footer {
-    background: lightblue;
-    padding: 0.6rem;
-}
 
-/* estilo de los link´s del footer */
-footer div ul {
-    list-style: none;
-    padding: 0.19rem;
-}
+    .fieldset .boton-enviar,
+    .fieldset .boton-borrar {
+        padding: 0.76rem;
+    }
 
-/* titulo del footer */
-footer div h2 {
-    padding: 0.19rem;
-    margin-top: 0.38rem;
-}
-/* footer legales */
-.footer-legales {
-    background: lightskyblue;
-    text-align: center;
-    margin-top: 1.89rem;
-}
+    /* estilos del footer */
+
+    footer {
+        background: lightblue;
+        padding: 0.6rem;
+    }
+
+    /* estilo de los link´s del footer */
+    footer div ul {
+        list-style: none;
+        padding: 0.19rem;
+    }
+
+    /* titulo del footer */
+    footer div h2 {
+        padding: 0.19rem;
+        margin-top: 0.38rem;
+    }
+
+    /* footer legales */
+    .footer-legales {
+        background: rgb(180, 225, 255);
+        text-align: center;
+        margin-top: 1.89rem;
+    }
 
 }

@@ -9,48 +9,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- link de bt -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <!-- link de css -->
     <link rel="stylesheet" href="../css/style.css">
+
     <title>Nosotros-Fishop</title>
 </head>
 
 <body>
     <header>
 
-        <!-- menu hamburguesa para mobie -->
-        <div class="menu-hamburguesa">
-            <img src="../img/outline_menu_black_24dp.png" alt="menu-mobie">
-        </div>
-
-        <!-- logo de la home -->
-        <div class="logo-home">
-            <img src="../img/logo-home.jpg" alt="logo-de-la-marca">
-        </div>
-
-        <!-- nombre del sitio -->
-        <div class="nombre-sitio">
-            <strong> FISHOP </strong>
-        </div>
-        <nav>
-
-            <!-- BARRA DE NAVEGACION-->
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="../pages/tienda.html">Tienda</a>
-                </li>
-                <li>
-                    <a href="../pages/nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="../pages/dudas.html">Dudas</a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <!-- barra de navegacion y menu hamburguesa bt -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../img/logo-home.jpg" alt="Tienda de peces">
+                </a>
+                <span class="nombre-logo"> Tienda Fishop </span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/dudas.html">Dudas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
         <!-- logo carrito y registrarse -->
@@ -61,34 +65,39 @@
 
     </header>
 
-    <main class="biografia-sitio">
-        <h1> FISHOP </h1>
-        <p>
-            Te invitamos a que nos conozcas un poco más, ya que tu punto de vista hacia nosotros es muy importante para
-            nuestro equipo, tenemos el compromiso y respeto hacia nuestros productos para que sean de calidad y
-            acompañen día a día a cada uno de nuestros clientes.
-        </p>
+    <main>
+        <h1 class="titulo-sitio"> FISHOP </h1>
+        <div class="biografia-sitio">
+            <p>
+                Te invitamos a que nos conozcas un poco más, ya que tu punto de vista hacia nosotros es muy importante
+                para
+                nuestro equipo, tenemos el compromiso y respeto hacia nuestros productos para que sean de calidad y
+                acompañen día a día a cada uno de nuestros clientes.
+            </p>
 
-        <div class="imagen-biografia">
-            <img src="../img/biografia-peces.jpg" alt="peces tropicales">
+            <div class="imagen-biografia">
+                <img src="../img/biografia-peces.jpg" alt="peces tropicales">
+            </div>
+
+            <p>
+                Fue fundada en el año 2009, en Morón, Buenos Aires. Empezamos comprando pocas unidades de peces,
+                entregándolos a domicilio en transporte público. Al año crecimos y pudimos comprar un vehículo para las
+                entregas.
+            </p>
+
+            <p>
+                En el año 2020 crecimos tanto en ventas que abrimos nuestra primera sucursal en Morón, todo gracias a la
+                confianza de nuestros clientes. Actualmente también vendemos a través de nuestra página web y Mercado
+                Libre,
+                realizando envíos a todo el país.
+            </p>
+
+            <p>
+                Nuestro objetivo es seguir creciendo para continuar brindando el mejor servicio y que nos sigan
+                eligiendo
+                día a día, en cada rinconcito de sus casas.
+            </p>
         </div>
-
-        <p>
-            Fue fundada en el año 2009, en Morón, Buenos Aires. Empezamos comprando pocas unidades de peces,
-            entregándolos a domicilio en transporte público. Al año crecimos y pudimos comprar un vehículo para las
-            entregas.
-        </p>
-
-        <p>
-            En el año 2020 crecimos tanto en ventas que abrimos nuestra primera sucursal en Morón, todo gracias a la
-            confianza de nuestros clientes. Actualmente también vendemos a través de nuestra página web y Mercado Libre,
-            realizando envíos a todo el país.
-        </p>
-
-        <p>
-            Nuestro objetivo es seguir creciendo para continuar brindando el mejor servicio y que nos sigan eligiendo
-            día a día, en cada rinconcito de sus casas.
-        </p>
     </main>
 
     <section class="video-biografia">
@@ -114,6 +123,10 @@
         </div>
     </footer>
 
+    <!-- scrip js bt -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
