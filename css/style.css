@@ -21,10 +21,10 @@ header {
     padding: 0rem 1rem;
 }
 
-
 .header-principal {
     display: flex;
 }
+
 
 /* barra de navegacion */
 header nav ul {
@@ -42,18 +42,19 @@ header nav ul li {
     font-weight: bold;
 }
 
-
 header nav ul li a {
     text-decoration: none;
 }
 
 
+/* nombre del logo que aparece en la barra*/
 .nombre-logo {
     font-weight: bold;
     font-size: 120%;
     margin-top: 1rem;
     margin-right: 1rem;
 }
+
 
 /* logos de registrarse y carrito de compras */
 .logos {
@@ -148,6 +149,7 @@ main h1 {
     margin-bottom: 1.26rem;
 }
 
+
 /* estilos de banners de la Tienda */
 .banner-tienda-uno img,
 .banner-tienda-dos img,
@@ -174,6 +176,7 @@ main h1 {
 .accesorios-peceras img {
     height: 15rem;
 }
+
 
 /* titulo del producto */
 .descripcion-producto {
@@ -230,7 +233,6 @@ main ul li ul li {
 }
 
 
-
 /* pagina contacto */
 .contacto-uno p {
     padding: 0.63rem;
@@ -260,11 +262,11 @@ main ul li ul li {
     width: 140%;
 }
 
-
 .fieldset .boton-enviar,
 .fieldset .boton-borrar {
     padding: 0.76rem;
 }
+
 
 /* estilos del footer */
 
@@ -273,17 +275,20 @@ footer {
     padding: 0, 32rem;
 }
 
+
 /* estilo de los link´s del footer */
 footer div ul {
     list-style: none;
     padding: 0.19rem;
 }
 
+
 /* titulo del footer */
 footer div h2 {
     padding: 0.19rem;
     margin-top: 0.38rem;
 }
+
 
 /* footer legales */
 .footer-legales {
@@ -340,7 +345,6 @@ footer div h2 {
     }
 
 
-
     /* pagina home */
     .slider-principal img {
         display: block;
@@ -351,6 +355,7 @@ footer div h2 {
     .slider-principal-mobie img {
         display: none;
     }
+
 
     /* titulo de las categorias de la home */
     .titulo-categorias {
@@ -392,11 +397,13 @@ footer div h2 {
         padding: 0.5rem;
     }
 
+
     /* estilo del contenido de la pagina nosotros*/
     .biografia-sitio {
         margin: 0.32rem 0.32rem 1.26rem 0.32rem;
         text-align: center;
     }
+
 
     /* titulos de las paginas nosotros-tienda-dudas-contacto */
     .titulo-sitio,
@@ -408,10 +415,12 @@ footer div h2 {
         font-size: 180%;
     }
 
+
     /* estilos Tienda */
     .tienda-categorias {
         margin-bottom: 1.26rem;
     }
+
 
     /* estilos de banners de la Tienda */
     .banner-tienda-uno img,
@@ -432,13 +441,13 @@ footer div h2 {
         flex-direction: column;
     }
 
-
     .peces-frios img,
     .peces-tropicales img,
     .accesorios-peceras img {
         height: 13rem;
         margin: 0.63rem 0.26rem 1.32rem 0.15rem;
     }
+
 
     /* titulo del producto */
     .descripcion-producto {
@@ -472,6 +481,7 @@ footer div h2 {
         list-style: none;
     }
 
+
     /* pagina nosotros-video de la biografia */
     .video-biografia {
         width: 100%;
@@ -481,12 +491,14 @@ footer div h2 {
         margin-bottom: 1.26rem;
     }
 
+
     /* estilo de la imagen de la biografia */
     .imagen-biografia img {
         width: 100%;
         padding: 1.14rem;
         border-radius: 3.15rem;
     }
+
 
     /* pagina contacto */
     .contacto-uno p {
@@ -517,11 +529,11 @@ footer div h2 {
         width: 200%;
     }
 
-
     .fieldset .boton-enviar,
     .fieldset .boton-borrar {
         padding: 0.76rem;
     }
+
 
     /* estilos del footer */
 
@@ -530,17 +542,20 @@ footer div h2 {
         padding: 0.6rem;
     }
 
+
     /* estilo de los link´s del footer */
     footer div ul {
         list-style: none;
         padding: 0.19rem;
     }
 
+
     /* titulo del footer */
     footer div h2 {
         padding: 0.19rem;
         margin-top: 0.38rem;
     }
+
 
     /* footer legales */
     .footer-legales {
@@ -594,7 +609,6 @@ footer div h2 {
     }
 
 
-
     /* pagina home */
     .slider-principal img {
         display: none;
@@ -607,6 +621,7 @@ footer div h2 {
         width: 100%;
         height: 100%;
     }
+
 
     /* titulo de las categorias de la home */
     .titulo-categorias {
@@ -649,11 +664,13 @@ footer div h2 {
         padding: 0.5rem;
     }
 
+
     /* estilo del contenido de la pagina nosotros*/
     .biografia-sitio {
         margin: 0.32rem 0.32rem 1.26rem 0.32rem;
         text-align: center;
     }
+
 
     /* titulos de las paginas nosotros-tienda-dudas-contacto */
     .titulo-sitio,
@@ -665,10 +682,12 @@ footer div h2 {
         font-size: 160%;
     }
 
+
     /* estilos Tienda */
     .tienda-categorias {
         margin-bottom: 1.26rem;
     }
+
 
     /* estilos de banners de la Tienda */
     .banner-tienda-uno img,
@@ -689,13 +708,13 @@ footer div h2 {
         flex-direction: column;
     }
 
-
     .peces-frios img,
     .peces-tropicales img,
     .accesorios-peceras img {
         height: 13rem;
         margin: 0.63rem 0.26rem 1.32rem 0.15rem;
     }
+
 
     /* titulo del producto */
     .descripcion-producto {
@@ -729,6 +748,7 @@ footer div h2 {
         list-style: none;
     }
 
+
     /* pagina nosotros-video de la biografia */
     .video-biografia {
         width: 100%;
@@ -738,12 +758,14 @@ footer div h2 {
         margin-bottom: 1.26rem;
     }
 
+
     /* estilo de la imagen de la biografia */
     .imagen-biografia img {
         width: 100%;
         padding: 1.14rem;
         border-radius: 3.15rem;
     }
+
 
     /* pagina contacto */
     .contacto-uno p {
@@ -774,11 +796,11 @@ footer div h2 {
         width: 390%;
     }
 
-
     .fieldset .boton-enviar,
     .fieldset .boton-borrar {
         padding: 0.76rem;
     }
+
 
     /* estilos del footer */
 
@@ -787,11 +809,13 @@ footer div h2 {
         padding: 0.6rem;
     }
 
+
     /* estilo de los link´s del footer */
     footer div ul {
         list-style: none;
         padding: 0.19rem;
     }
+
 
     /* titulo del footer */
     footer div h2 {
@@ -799,11 +823,11 @@ footer div h2 {
         margin-top: 0.38rem;
     }
 
+
     /* footer legales */
     .footer-legales {
         background: rgb(180, 225, 255);
         text-align: center;
         margin-top: 1.89rem;
     }
-
 }
