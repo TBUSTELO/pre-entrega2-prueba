@@ -51,6 +51,8 @@ header nav ul li a {
 .nombre-logo {
     font-weight: bold;
     font-size: 120%;
+    margin-top: 0.5rem;
+    margin-right: 0.7rem;
 }
 
 
@@ -153,6 +155,7 @@ main h1 {
     margin-bottom: 1.26rem;
 }
 
+
 /* estilos de banners de la Tienda */
 .banner-tienda-uno img,
 .banner-tienda-dos img,
@@ -173,12 +176,23 @@ main h1 {
     justify-items: center;
 }
 
-
 .peces-frios img,
 .peces-tropicales img,
 .accesorios-peceras img {
     height: 15rem;
 }
+
+
+/* boton de agregar al carrito */
+.boton-carrito {
+    text-align: center;
+    font-size: 1.26rem;
+    font-weight: bold;
+    background-color: rgb(242, 253, 255);
+    border-radius: 2rem;
+    padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+}
+
 
 /* titulo del producto */
 .descripcion-producto {
@@ -236,7 +250,6 @@ main ul li ul li {
 }
 
 
-
 /* pagina contacto */
 .contacto-uno p {
     padding: 0.63rem;
@@ -266,14 +279,13 @@ main ul li ul li {
     width: 140%;
 }
 
-
 .fieldset .boton-enviar,
 .fieldset .boton-borrar {
     padding: 0.76rem;
 }
 
-/* estilos del footer */
 
+/* estilos del footer */
 footer {
     background: lightskyblue;
     padding: 0, 32rem;
@@ -295,19 +307,35 @@ footer div h2 {
 }
 
 
-/* footer metodos de pago */
-.footer-metodos-de-pago {
+/* footer links */
+.footer-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
 }
 
 
 /* footer iconos de los metodos de pagos */
-.iconos-pagos img {
+.iconos-pagos {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.iconos-pagos img {
     width: 15%;
     height: 15%;
+}
+
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
 }
 
 
@@ -342,6 +370,15 @@ footer div h2 {
     }
 
 
+    /* estilos del nombre del logo */
+    .nombre-logo {
+        font-weight: bold;
+        font-size: 120%;
+        margin-top: 0.5rem;
+        margin-right: 0.7rem;
+    }
+
+
     /* logos de registrarse y carrito de compras */
     .logos {
         display: block;
@@ -367,7 +404,6 @@ footer div h2 {
     }
 
 
-
     /* pagina home */
     .slider-principal img {
         display: block;
@@ -378,6 +414,7 @@ footer div h2 {
     .slider-principal-mobie img {
         display: none;
     }
+
 
     /* titulo de las categorias de la home */
     .titulo-categorias {
@@ -419,11 +456,13 @@ footer div h2 {
         padding: 0.5rem;
     }
 
+
     /* estilo del contenido de la pagina nosotros*/
     .biografia-sitio {
         margin: 0.32rem 0.32rem 1.26rem 0.32rem;
         text-align: center;
     }
+
 
     /* titulos de las paginas nosotros-tienda-dudas-contacto */
     .titulo-sitio,
@@ -435,10 +474,12 @@ footer div h2 {
         font-size: 180%;
     }
 
+
     /* estilos Tienda */
     .tienda-categorias {
         margin-bottom: 1.26rem;
     }
+
 
     /* estilos de banners de la Tienda */
     .banner-tienda-uno img,
@@ -467,14 +508,12 @@ footer div h2 {
         margin: 0.63rem 0.26rem 1.32rem 0.15rem;
     }
 
+
     /* titulo del producto */
     .descripcion-producto {
         text-align: center;
         font-size: 1.26rem;
         font-weight: bold;
-        background-color: rgb(242, 253, 255);
-        border-radius: 2rem;
-        padding: 0.5rem 0.2rem 0.5rem 0.2rem;
     }
 
 
@@ -484,6 +523,17 @@ footer div h2 {
         font-weight: bolder;
         margin-top: 0.5rem;
         margin-bottom: 0.80rem;
+    }
+
+
+    /* boton de agregar al carrito */
+    .boton-carrito {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: rgb(242, 253, 255);
+        border-radius: 2rem;
+        padding: 0.5rem 0.2rem 0.5rem 0.2rem;
     }
 
 
@@ -498,6 +548,7 @@ footer div h2 {
         list-style: none;
     }
 
+
     /* pagina nosotros-video de la biografia */
     .video-biografia {
         width: 100%;
@@ -507,12 +558,14 @@ footer div h2 {
         margin-bottom: 1.26rem;
     }
 
+
     /* estilo de la imagen de la biografia */
     .imagen-biografia img {
         width: 100%;
         padding: 1.14rem;
         border-radius: 3.15rem;
     }
+
 
     /* pagina contacto */
     .contacto-uno p {
@@ -542,25 +595,25 @@ footer div h2 {
         width: 200%;
     }
 
-
     .fieldset .boton-enviar,
     .fieldset .boton-borrar {
         padding: 0.76rem;
     }
 
-    /* estilos del footer */
 
+    /* estilos del footer */
     footer {
         background: lightskyblue;
         padding: 0.6rem;
-
     }
+
 
     /* estilo de los link´s del footer */
     footer div ul {
         list-style: none;
         padding: 0.19rem;
     }
+
 
     /* titulo del footer */
     footer div h2 {
@@ -569,10 +622,23 @@ footer div h2 {
     }
 
 
+    /* estilo del titulos redes sociales */
+    .block-redes {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+
     /* footer metodos de pago */
-    .footer-metodos-de-pago {
+    .footer-links {
         display: flex;
         justify-content: space-around;
+    }
+
+    .footer-links ul li a {
+        text-decoration: none;
     }
 
 
@@ -582,6 +648,18 @@ footer div h2 {
         flex-direction: column;
         width: 15%;
         height: 15%;
+    }
+
+    .iconos-pagos img {
+        width: 15%;
+        height: 15%;
+    }
+
+    /* footer redes sociales */
+    .redes-sociales {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
     }
 
 
@@ -597,9 +675,7 @@ footer div h2 {
 
 
 
-
 /* responsive para celular */
-
 
 @media screen and (max-width:768px) {
 
@@ -614,6 +690,15 @@ footer div h2 {
     header {
         background: lightblue;
         display: flex;
+    }
+
+
+    /* estilos del nombre del logo */
+    .nombre-logo {
+        font-weight: bold;
+        font-size: 120%;
+        margin-top: 0.5rem;
+        margin-right: 0.4rem;
     }
 
 
@@ -636,7 +721,6 @@ footer div h2 {
     }
 
 
-
     /* pagina home */
     .slider-principal img {
         display: none;
@@ -650,6 +734,7 @@ footer div h2 {
         height: 100%;
     }
 
+
     /* titulo de las categorias de la home */
     .titulo-categorias {
         text-align: center;
@@ -660,7 +745,7 @@ footer div h2 {
 
     /* tamaño de las tarjetas de las categorias de la home */
     .tarjeta-categoria {
-        width: 100%;
+        width: 90%;
         padding: 0.63rem;
     }
 
@@ -691,11 +776,13 @@ footer div h2 {
         padding: 0.5rem;
     }
 
+
     /* estilo del contenido de la pagina nosotros*/
     .biografia-sitio {
         margin: 0.32rem 0.32rem 1.26rem 0.32rem;
         text-align: center;
     }
+
 
     /* titulos de las paginas nosotros-tienda-dudas-contacto */
     .titulo-sitio,
@@ -707,10 +794,12 @@ footer div h2 {
         font-size: 160%;
     }
 
+
     /* estilos Tienda */
     .tienda-categorias {
         margin-bottom: 1.26rem;
     }
+
 
     /* estilos de banners de la Tienda */
     .banner-tienda-uno img,
@@ -735,18 +824,16 @@ footer div h2 {
     .peces-frios img,
     .peces-tropicales img,
     .accesorios-peceras img {
-        height: 13rem;
+        height: 8rem;
         margin: 0.63rem 0.26rem 1.32rem 0.15rem;
     }
+
 
     /* titulo del producto */
     .descripcion-producto {
         text-align: center;
         font-size: 1.26rem;
         font-weight: bold;
-        background-color: rgb(242, 253, 255);
-        border-radius: 2rem;
-        padding: 0.5rem 0.2rem 0.5rem 0.2rem;
     }
 
 
@@ -756,6 +843,17 @@ footer div h2 {
         font-weight: bolder;
         margin-top: 0.5rem;
         margin-bottom: 0.80rem;
+    }
+
+
+    /* boton de agregar al carrito */
+    .boton-carrito {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: rgb(242, 253, 255);
+        border-radius: 2rem;
+        padding: 0.5rem 0.2rem 0.5rem 0.2rem;
     }
 
 
@@ -770,6 +868,7 @@ footer div h2 {
         list-style: none;
     }
 
+
     /* pagina nosotros-video de la biografia */
     .video-biografia {
         width: 100%;
@@ -779,12 +878,14 @@ footer div h2 {
         margin-bottom: 1.26rem;
     }
 
+
     /* estilo de la imagen de la biografia */
     .imagen-biografia img {
         width: 100%;
         padding: 1.14rem;
         border-radius: 3.15rem;
     }
+
 
     /* pagina contacto */
     .contacto-uno p {
@@ -814,14 +915,13 @@ footer div h2 {
         width: 390%;
     }
 
-
     .fieldset .boton-enviar,
     .fieldset .boton-borrar {
         padding: 0.76rem;
     }
 
-    /* estilos del footer */
 
+    /* estilos del footer */
     footer {
         background: lightskyblue;
         padding: 2rem;
@@ -841,10 +941,13 @@ footer div h2 {
 
 
     /* footer metodos de pago */
-    .footer-metodos-de-pago {
+    .footer-links {
         display: flex;
         justify-content: space-around;
-        gap: 5rem;
+    }
+
+    .footer-links ul li a {
+        text-decoration: none;
     }
 
 
@@ -854,6 +957,16 @@ footer div h2 {
         flex-direction: column;
         width: 15%;
         height: 15%;
+    }
+
+
+    /* footer redes sociales */
+    .redes-sociales {
+        display: none
+    }
+
+    .block-redes {
+        display: none;
     }
 
 
