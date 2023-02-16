@@ -22,17 +22,12 @@ header {
 }
 
 
-.header-principal {
-    display: flex;
-}
-
 /* barra de navegacion */
 header nav ul {
     list-style: none;
     display: flex;
     gap: 1.1rem;
 }
-
 
 header nav ul li {
     background: lightskyblue;
@@ -42,17 +37,17 @@ header nav ul li {
     font-weight: bold;
 }
 
-
 header nav ul li a {
     text-decoration: none;
 }
-
 
 .nombre-logo {
     font-weight: bold;
     font-size: 120%;
     margin-top: 0.5rem;
     margin-right: 0.7rem;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -299,6 +294,15 @@ footer div ul {
 }
 
 
+/* estilo del titulos redes sociales */
+.block-redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
 /* titulo del footer */
 footer div h2 {
     padding: 0.19rem;
@@ -332,6 +336,7 @@ footer div h2 {
 }
 
 
+/* footer redes sociales */
 .redes-sociales {
     display: flex;
     justify-content: center;
@@ -356,34 +361,8 @@ footer div h2 {
 
 @media screen and (max-width:1130px) {
 
-    /* color del sitio */
-    body {
-        background-image: linear-gradient(to bottom, rgb(205, 238, 248), rgb(79, 205, 247));
-        font-family: 'Montserrat', sans-serif;
-    }
-
-
-    /* color del header */
-    header {
-        background: lightblue;
-        display: flex;
-    }
-
-
-    /* estilos del nombre del logo */
-    .nombre-logo {
-        font-weight: bold;
-        font-size: 120%;
-        margin-top: 0.5rem;
-        margin-right: 0.7rem;
-    }
-
-
     /* logos de registrarse y carrito de compras */
     .logos {
-        display: block;
-        display: flex;
-        justify-content: center;
         align-items: flex-start;
         gap: 1rem;
         padding-top: 2rem;
@@ -397,10 +376,7 @@ footer div h2 {
 
     /* titulos de las paginas */
     main h1 {
-        text-align: center;
-        background-color: lightskyblue;
         margin-top: 0.1rem;
-        margin-bottom: 1.26rem;
     }
 
 
@@ -410,48 +386,14 @@ footer div h2 {
     }
 
 
-    /* slider principal mobie */
-    .slider-principal-mobie img {
-        display: none;
-    }
-
-
     /* titulo de las categorias de la home */
     .titulo-categorias {
-        text-align: center;
         margin: 0.2rem 0 1.1rem 0;
-        text-decoration: underline;
-    }
-
-
-    /* tamaño de las tarjetas de las categorias de la home */
-    .tarjeta-categoria {
-        width: 33%;
-        padding: 0.63rem;
-    }
-
-
-    /* estilos de las tarjetas Home */
-    .categorias {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    /* estilos de textos tarjetas Home */
-    .texto-tarjeta {
-        text-align: center;
-        font-weight: bold;
-        font-size: 1.26rem;
     }
 
 
     /* cinta de la home */
     .cinta {
-        background-color: lightskyblue;
-        margin-bottom: 1.26rem;
         font-size: larger;
         padding: 0.5rem;
     }
@@ -469,24 +411,7 @@ footer div h2 {
     .tienda-sitio,
     .dudas-sitio,
     .contacto-sitio {
-        margin: 0.32rem 0.32rem 1.26rem 0.32rem;
-        text-align: center;
         font-size: 180%;
-    }
-
-
-    /* estilos Tienda */
-    .tienda-categorias {
-        margin-bottom: 1.26rem;
-    }
-
-
-    /* estilos de banners de la Tienda */
-    .banner-tienda-uno img,
-    .banner-tienda-dos img,
-    .banner-tienda-tres img {
-        width: 100%;
-        height: 100%;
     }
 
 
@@ -509,18 +434,9 @@ footer div h2 {
     }
 
 
-    /* titulo del producto */
-    .descripcion-producto {
-        text-align: center;
-        font-size: 1.26rem;
-        font-weight: bold;
-    }
-
 
     /* titulo del precio */
     .titulo-del-precio {
-        text-align: center;
-        font-weight: bolder;
         margin-top: 0.5rem;
         margin-bottom: 0.80rem;
     }
@@ -539,23 +455,7 @@ footer div h2 {
 
     /* pagina dudas */
     .preguntas {
-        padding: 1.58rem;
-        list-style: none;
         margin-bottom: 2rem;
-    }
-
-    main ul li ul li {
-        list-style: none;
-    }
-
-
-    /* pagina nosotros-video de la biografia */
-    .video-biografia {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1.26rem;
     }
 
 
@@ -563,82 +463,24 @@ footer div h2 {
     .imagen-biografia img {
         width: 100%;
         padding: 1.14rem;
-        border-radius: 3.15rem;
     }
 
-
-    /* pagina contacto */
-    .contacto-uno p {
-        padding: 0.63rem;
-    }
-
-
-    /* estilo del formulario */
-    .fieldset {
-        width: 12%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        border: none;
-        gap: 0.32rem;
-        margin-top: 1.26rem;
-        margin-bottom: 1.89rem;
-    }
 
     .fieldset input {
-        border-radius: 0.51rem;
-        border: none;
-        padding: 0.38rem;
-        outline: none;
         width: 200%;
-    }
-
-    .fieldset .boton-enviar,
-    .fieldset .boton-borrar {
-        padding: 0.76rem;
     }
 
 
     /* estilos del footer */
     footer {
-        background: lightskyblue;
         padding: 0.6rem;
     }
 
 
-    /* estilo de los link´s del footer */
-    footer div ul {
-        list-style: none;
-        padding: 0.19rem;
-    }
-
-
-    /* titulo del footer */
-    footer div h2 {
-        padding: 0.19rem;
-        margin-top: 0.38rem;
-    }
-
-
-    /* estilo del titulos redes sociales */
-    .block-redes {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
 
     /* footer metodos de pago */
     .footer-links {
-        display: flex;
         justify-content: space-around;
-    }
-
-    .footer-links ul li a {
-        text-decoration: none;
     }
 
 
@@ -646,31 +488,9 @@ footer div h2 {
     .iconos-pagos img {
         display: flex;
         flex-direction: column;
-        width: 15%;
-        height: 15%;
     }
 
-    .iconos-pagos img {
-        width: 15%;
-        height: 15%;
-    }
-
-    /* footer redes sociales */
-    .redes-sociales {
-        display: flex;
-        justify-content: center;
-        gap: 18px;
-    }
-
-
-    /* footer legales */
-    .footer-legales {
-        background: rgb(180, 225, 255);
-        text-align: center;
-        margin-top: 1.89rem;
-    }
 }
-
 
 
 
@@ -679,25 +499,8 @@ footer div h2 {
 
 @media screen and (max-width:768px) {
 
-    /* color del sitio */
-    body {
-        background-image: linear-gradient(to bottom, rgb(205, 238, 248), rgb(79, 205, 247));
-        font-family: 'Montserrat', sans-serif;
-    }
-
-
-    /* color del header */
-    header {
-        background: lightblue;
-        display: flex;
-    }
-
-
     /* estilos del nombre del logo */
     .nombre-logo {
-        font-weight: bold;
-        font-size: 120%;
-        margin-top: 0.5rem;
         margin-right: 0.4rem;
     }
 
@@ -714,10 +517,7 @@ footer div h2 {
 
     /* titulos de las paginas */
     main h1 {
-        text-align: center;
-        background-color: lightskyblue;
         margin-top: 0.1rem;
-        margin-bottom: 1.26rem;
     }
 
 
@@ -737,41 +537,24 @@ footer div h2 {
 
     /* titulo de las categorias de la home */
     .titulo-categorias {
-        text-align: center;
         margin: 0.2rem 0 1.1rem 0;
-        text-decoration: underline;
     }
 
 
     /* tamaño de las tarjetas de las categorias de la home */
     .tarjeta-categoria {
         width: 90%;
-        padding: 0.63rem;
     }
 
 
     /* estilos de las tarjetas Home */
     .categorias {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
-    }
-
-
-    /* estilos de textos tarjetas Home */
-    .texto-tarjeta {
-        text-align: center;
-        font-weight: bold;
-        font-size: 1.26rem;
     }
 
 
     /* cinta de la home */
     .cinta {
-        background-color: lightskyblue;
-        margin-bottom: 1.26rem;
         font-size: larger;
         padding: 0.5rem;
     }
@@ -789,25 +572,9 @@ footer div h2 {
     .tienda-sitio,
     .dudas-sitio,
     .contacto-sitio {
-        margin: 0.32rem 0.32rem 1.26rem 0.32rem;
-        text-align: center;
         font-size: 160%;
     }
 
-
-    /* estilos Tienda */
-    .tienda-categorias {
-        margin-bottom: 1.26rem;
-    }
-
-
-    /* estilos de banners de la Tienda */
-    .banner-tienda-uno img,
-    .banner-tienda-dos img,
-    .banner-tienda-tres img {
-        width: 100%;
-        height: 100%;
-    }
 
 
     /* estilos tarjetas Tienda */
@@ -829,53 +596,22 @@ footer div h2 {
     }
 
 
-    /* titulo del producto */
-    .descripcion-producto {
-        text-align: center;
-        font-size: 1.26rem;
-        font-weight: bold;
+    /* boton de agregar al carrito */
+    .boton-carrito {
+        font-size: 1rem;
     }
 
 
     /* titulo del precio */
     .titulo-del-precio {
-        text-align: center;
-        font-weight: bolder;
         margin-top: 0.5rem;
         margin-bottom: 0.80rem;
     }
 
 
-    /* boton de agregar al carrito */
-    .boton-carrito {
-        text-align: center;
-        font-size: 1rem;
-        font-weight: bold;
-        background-color: rgb(242, 253, 255);
-        border-radius: 2rem;
-        padding: 0.5rem 0.2rem 0.5rem 0.2rem;
-    }
-
-
     /* pagina dudas */
     .preguntas {
-        padding: 1.58rem;
-        list-style: none;
         margin-bottom: 2rem;
-    }
-
-    main ul li ul li {
-        list-style: none;
-    }
-
-
-    /* pagina nosotros-video de la biografia */
-    .video-biografia {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1.26rem;
     }
 
 
@@ -887,83 +623,31 @@ footer div h2 {
     }
 
 
-    /* pagina contacto */
-    .contacto-uno p {
-        padding: 0.63rem;
-    }
-
-
-    /* estilo del formulario */
-    .fieldset {
-        width: 12%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        border: none;
-        gap: 0.32rem;
-        margin-top: 1.26rem;
-        margin-bottom: 1.89rem;
-    }
-
     .fieldset input {
-        border-radius: 0.51rem;
-        border: none;
-        padding: 0.38rem;
-        outline: none;
         width: 390%;
     }
 
-    .fieldset .boton-enviar,
-    .fieldset .boton-borrar {
-        padding: 0.76rem;
-    }
 
 
     /* estilos del footer */
     footer {
-        background: lightskyblue;
         padding: 2rem;
     }
 
-    /* estilo de los link´s del footer */
-    footer div ul {
-        list-style: none;
-        padding: 0.19rem;
-    }
-
-    /* titulo del footer */
-    footer div h2 {
-        padding: 0.19rem;
-        margin-top: 0.38rem;
-    }
 
 
     /* footer metodos de pago */
     .footer-links {
-        display: flex;
         justify-content: space-around;
     }
 
-    .footer-links ul li a {
-        text-decoration: none;
-    }
-
-
-    /* footer iconos de los metodos de pagos */
-    .iconos-pagos img {
-        display: flex;
-        flex-direction: column;
-        width: 15%;
-        height: 15%;
-    }
 
 
     /* footer redes sociales */
     .redes-sociales {
         display: none
     }
+
 
     .block-redes {
         display: none;
@@ -972,8 +656,6 @@ footer div h2 {
 
     /* footer legales */
     .footer-legales {
-        background: rgb(180, 225, 255);
-        text-align: center;
         margin-top: 4rem;
     }
 }
