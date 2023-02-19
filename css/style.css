@@ -327,6 +327,15 @@ footer div h2 {
 }
 
 
+/* estilo de los links de las paginas*/
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
 /* footer iconos de los metodos de pagos */
 
 .iconos-pagos {
@@ -541,12 +550,28 @@ footer div h2 {
     }
 
 
+    /* estilo de los links de las paginas*/
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
     /* footer iconos de los metodos de pagos */
     .iconos-pagos img {
         display: flex;
         flex-direction: column;
     }
 
+
+    /* estilo del titulos redes sociales */
+    .block-redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
@@ -739,6 +764,14 @@ footer div h2 {
     }
 
 
+    /* estilo de los links de las paginas*/
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     /* footer iconos de los metodos de pagos */
 
     .iconos-pagos {
@@ -752,6 +785,7 @@ footer div h2 {
     .block-redes {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
 
