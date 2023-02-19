@@ -244,6 +244,7 @@ main h1 {
 .contacto-uno p {
     font-size: 1rem;
     margin: 2rem 5rem 2rem 5rem;
+    text-align: center;
 }
 
 
@@ -502,6 +503,7 @@ footer div h2 {
     .contacto-uno p {
         font-size: 1rem;
         margin: 2rem 3rem 2rem 3rem;
+        text-align: center;
     }
 
     /* estilo del formulario */
@@ -716,6 +718,7 @@ footer div h2 {
     .contacto-uno p {
         font-size: 1rem;
         margin: 2rem 3rem 2rem 3rem;
+        text-align: center;
     }
 
     /* estilo del formulario */
