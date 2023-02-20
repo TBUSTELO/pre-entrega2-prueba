@@ -1,0 +1,31 @@
+main {
+
+    /* estilo del contenido de la pagina nosotros*/
+    .biografia-sitio {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 2.5rem;
+    }
+
+    /* estilo de la imagen de la biografia */
+    .imagen-biografia img {
+        padding: 1rem;
+        border-radius: 3.15rem;
+        height: 450px;
+    }
+
+    section {
+
+        /* pagina nosotros-video de la biografia */
+        .video-biografia {
+            width: 100%;
+            margin-right: 2rem;
+        }
+    }
+}
+
+/* responsive para tablet */
+
+@import "../utilidades/mq";

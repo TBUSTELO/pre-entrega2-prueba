@@ -1,0 +1,26 @@
+// reset
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// color del sitio
+body {
+    background-image: linear-gradient(to bottom, rgb(234, 243, 246), rgb(181, 231, 248));
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+//importar archivos secundarios
+@import "variables/variables";
+@import "variables/extend";
+@import "variables/mixin";
+
+//importar archivos
+@import "../scss/index/index";
+@import "../scss/tienda/tienda";
+@import "../scss/nosotros/nosotros";
+@import "../scss/dudas/dudas";
+@import "../scss/contacto/contacto";
+

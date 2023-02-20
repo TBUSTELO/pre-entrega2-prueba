@@ -1,0 +1,13 @@
+main {
+
+    /* pagina dudas */
+    .preguntas p {
+        text-align: center;
+        margin: 3rem 9rem 4rem 9rem;
+        font-size: 1rem;
+    }
+}
+
+/* responsive para tablet */
+
+@import "../utilidades/mq";

@@ -1,0 +1,53 @@
+@import "../variables/mixin";
+
+main {
+
+    /* pagina contacto */
+    .contacto-uno p {
+        font-size: 1rem;
+        margin: 2rem 5rem 2rem 5rem;
+        text-align: center;
+    }
+
+    form {
+
+        /* estilo del formulario */
+        .fieldset {
+            width: 12%;
+            @include flex;
+            flex-direction: column;
+            margin-left: 21rem;
+            border: none;
+            gap: 0.32rem;
+            margin-top: 1.26rem;
+            margin-bottom: 1.89rem;
+
+            input {
+                border-radius: 0.51rem;
+                border: none;
+                padding: 0.38rem;
+                outline: none;
+                width: 140%;
+            }
+
+            .boton-enviar,
+            .boton-borrar {
+                padding: 0.76rem;
+            }
+
+        }
+    }
+}
+
+
+.ubicacion-local {
+    img {
+        width: 40%;
+        margin: -40rem 0rem 0rem 40rem;
+        border-radius: 2rem;
+    }
+}
+
+/* responsive para tablet */
+
+@import "../utilidades/mq";

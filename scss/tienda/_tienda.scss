@@ -1,0 +1,84 @@
+@import "../variables/variables";
+@import "../variables/mixin";
+@import "../variables/extend";
+
+main {
+
+    /* titulos de las paginas */
+    h1 {
+        text-align: center;
+        background-color: $color-secundario;
+        margin-top: 0.32rem;
+        margin-bottom: 1.26rem;
+
+        /* titulos de las paginas nosotros-tienda-dudas-contacto */
+        .titulo-sitio,
+        .tienda-sitio,
+        .dudas-sitio,
+        .contacto-sitio {
+            margin: 0.32rem 0.32rem 1.26rem 0.32rem;
+            text-align: center;
+            font-size: 1.7rem;
+        }
+    }
+
+    div {
+
+        /* estilos Tienda */
+        .tienda-categorias {
+            margin-bottom: 1.26rem;
+        }
+
+        /* estilos de banners de la Tienda */
+        .banner-tienda-uno img,
+        .banner-tienda-dos img,
+        .banner-tienda-tres img {
+            @include medidas (100%, 100%)
+        }
+
+
+
+
+        /* estilos tarjetas Tienda */
+        .categoria-peces-frios,
+        .categoria-peces-tropicales,
+        .categoria-accesorios {
+            display: grid;
+            grid-template-columns: 0.4fr 0.4fr 0.4fr;
+            grid-template-rows: 1fr;
+            padding: 2rem;
+            justify-items: center;
+        }
+
+        .peces-frios,
+        .peces-tropicales,
+        .accesorios-peceras {
+            img {
+                height: 15rem;
+            }
+
+        }
+
+
+        /* titulo del producto */
+        .descripcion-producto {
+            text-align: center;
+            font-size: 1.26rem;
+            margin-bottom: 0.32rem;
+            @extend %letra;
+        }
+
+        /* titulo del precio */
+        .titulo-del-precio {
+            text-align: center;
+            margin-bottom: 0.9rem;
+            font-weight: bolder;
+        }
+
+    }
+}
+
+
+/* responsive para tablet */
+
+@import "../utilidades/mq";
