@@ -1,9 +1,7 @@
-@import "../variables/mixin";
-
 // mq html de index  para tablet
 
 /* mq para tablet de la pagina index */
-@media screen and (max-width:1130px) {
+@media (max-width: 1130px) {
 
     /* logos de registrarse y carrito de compras */
     header {
@@ -19,8 +17,18 @@
     }
 
     main {
-        .slider-principal img {
-            display: none;
+
+        .slider-principal {
+            img {
+                display: block;
+            }
+        }
+
+        .slider-principal-mobie {
+            img {
+                display: none;
+            }
+
         }
 
         /* cinta de la home */
@@ -94,7 +102,7 @@
             .categoria-peces-frios,
             .categoria-peces-tropicales,
             .categoria-accesorios {
-                grid-template-columns: 0.4fr;
+                grid-template-columns: 1fr;
             }
 
             .peces-frios img,
@@ -210,6 +218,8 @@
 }
 
 
+
+
 // mq html de index  para mobile
 
 /* mq para mobile de la pagina index */
@@ -313,38 +323,40 @@
     /* mq para mobile de la pagina tienda */
 
     main {
+        div {
 
-        /* titulos de las paginas nosotros-tienda-dudas-contacto */
-        .titulo-sitio,
-        .tienda-sitio,
-        .dudas-sitio,
-        .contacto-sitio {
-            font-size: 160%;
+            /* titulos de las paginas nosotros-tienda-dudas-contacto */
+            .titulo-sitio,
+            .tienda-sitio,
+            .dudas-sitio,
+            .contacto-sitio {
+                font-size: 160%;
+            }
+
+            section {
+
+                /* estilos tarjetas Tienda */
+                .categoria-peces-frios,
+                .categoria-peces-tropicales,
+                .categoria-accesorios {
+                    grid-template-columns: 1fr;
+                }
+
+                .peces-frios img,
+                .peces-tropicales img,
+                .accesorios-peceras img {
+                    height: 8rem;
+                    margin: 0.63rem 0.26rem 1.32rem 0.15rem;
+                }
+
+                /* titulo del precio */
+                .titulo-del-precio {
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.80rem;
+                }
+            }
         }
 
-        section {
-
-            /* estilos tarjetas Tienda */
-            .categoria-peces-frios,
-            .categoria-peces-tropicales,
-            .categoria-accesorios {
-                grid-template-columns: 0.4fr;
-                grid-template-rows: 1fr;
-            }
-
-            .peces-frios img,
-            .peces-tropicales img,
-            .accesorios-peceras img {
-                height: 8rem;
-                margin: 0.63rem 0.26rem 1.32rem 0.15rem;
-            }
-
-            /* titulo del precio */
-            .titulo-del-precio {
-                margin-top: 0.5rem;
-                margin-bottom: 0.80rem;
-            }
-        }
     }
 
 

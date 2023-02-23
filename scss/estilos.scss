@@ -1,11 +1,12 @@
 // reset
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 // color del sitio
+
 body {
     background-image: linear-gradient(to bottom, rgb(234, 243, 246), rgb(181, 231, 248));
     font-family: 'Montserrat', sans-serif;
@@ -17,10 +18,13 @@ body {
 @import "variables/extend";
 @import "variables/mixin";
 
+
 //importar archivos
-@import "../scss/index/index";
-@import "../scss/tienda/tienda";
-@import "../scss/nosotros/nosotros";
-@import "../scss/dudas/dudas";
-@import "../scss/contacto/contacto";
+@import "index/index";
+@import "tienda/tienda";
+@import "nosotros/nosotros";
+@import "dudas/dudas";
+@import "utilidades/mq";
+
+
 
