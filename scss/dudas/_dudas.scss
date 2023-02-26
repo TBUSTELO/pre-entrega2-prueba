@@ -1,11 +1,11 @@
-main {
+.main-dudas {
 
     /* pagina dudas */
-    .preguntas p {
+    .preguntas {
         text-align: center;
         margin: 3rem 9rem 4rem 9rem;
         font-size: 1rem;
     }
 }
 
-@import "../utilidades/mq";
+@import "utilidades/mq.scss";

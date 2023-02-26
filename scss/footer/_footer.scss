@@ -1,0 +1,77 @@
+@import "../variables/variables";
+@import "../variables/mixin";
+@import "../variables/extend";
+
+
+/* estilos del footer */
+footer {
+    background: $color-secundario;
+    padding: 0, 32rem;
+
+    /* footer links */
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 1.5rem;
+    }
+
+    /* estilo de los links de las paginas*/
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* titulo del footer */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* estilo de los link´s del footer */
+    ul {
+        list-style: none;
+        padding: 0.19rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+    /* footer iconos de los metodos de pagos */
+    .iconos-pagos {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        img {
+            width: 6%;
+        }
+    }
+
+
+    /* estilo del titulos redes sociales */
+    .block-redes {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    /* footer redes sociales */
+    .redes-sociales {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    /* footer legales */
+    .footer-legales {
+        background: rgb(180, 225, 255);
+        text-align: center;
+        margin-top: 1.89rem;
+    }
+}

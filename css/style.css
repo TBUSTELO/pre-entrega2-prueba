@@ -8,10 +8,16 @@ body {
   background-image: linear-gradient(to bottom, #eaf3f6, #b5e7f8);
   font-family: 'Montserrat', sans-serif; }
 
-header nav ul li, header .nombre-logo, section .texto-tarjeta, main div .descripcion-producto {
+header nav ul li, header .nombre-logo, .section-index-tarjetas .texto-tarjeta, .main-tienda .descripcion-producto,
+.main-nosotros .descripcion-producto,
+.main-dudas .descripcion-producto,
+.main-contacto .descripcion-producto {
   font-weight: bold; }
 
-header nav ul li, header .nombre-logo, section .texto-tarjeta, main div .descripcion-producto {
+header nav ul li, header .nombre-logo, .section-index-tarjetas .texto-tarjeta, .main-tienda .descripcion-producto,
+.main-nosotros .descripcion-producto,
+.main-dudas .descripcion-producto,
+.main-contacto .descripcion-producto {
   font-weight: bold; }
 
 /* color del header */
@@ -53,42 +59,11 @@ header {
     width: 1.8rem;
     height: 1.8rem; }
 
-main {
-  /* estilos slider principal home*/
-  /* slider principal mobie */
-  /* cinta de la home */ }
-  main .slider-principal img {
-    width: 100%;
-    height: 100%; }
-  main .slider-principal-mobie img {
-    display: none; }
-  main .cinta {
-    background-color: #83cbf8;
-    margin-bottom: 1.26rem;
-    padding: 0.4rem; }
-
-section {
-  /* titulo de las categorias de la home */ }
-  section .titulo-categorias {
-    text-align: center;
-    margin: 0.63rem 0 1.26rem 0;
-    text-decoration: underline;
-    font-size: 190%; }
-
-/* estilos de las tarjetas Home */
-section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* tamaño de las tarjetas de las categorias de la home */
-  /* estilos de textos tarjetas Home */ }
-  section .tarjeta-categoria {
-    width: 33%;
-    padding: 0.63rem; }
-  section .texto-tarjeta {
-    text-align: center;
-    font-size: 1.26rem; }
+header nav ul li, header .nombre-logo, .section-index-tarjetas .texto-tarjeta, .main-tienda .descripcion-producto,
+.main-nosotros .descripcion-producto,
+.main-dudas .descripcion-producto,
+.main-contacto .descripcion-producto {
+  font-weight: bold; }
 
 /* estilos del footer */
 footer {
@@ -140,6 +115,49 @@ footer {
     text-align: center;
     margin-top: 1.89rem; }
 
+header nav ul li, header .nombre-logo, .section-index-tarjetas .texto-tarjeta, .main-tienda .descripcion-producto,
+.main-nosotros .descripcion-producto,
+.main-dudas .descripcion-producto,
+.main-contacto .descripcion-producto {
+  font-weight: bold; }
+
+.main-index {
+  /* estilos slider principal home*/
+  /* slider principal mobie */
+  /* cinta de la home */ }
+  .main-index .slider-principal img {
+    width: 100%;
+    height: 100%; }
+  .main-index .slider-principal-mobie img {
+    display: none; }
+  .main-index .cinta {
+    background-color: #83cbf8;
+    margin-bottom: 1.26rem;
+    padding: 0.4rem; }
+
+.section-index {
+  /* titulo de las categorias de la home */ }
+  .section-index .titulo-categorias {
+    text-align: center;
+    margin: 0.63rem 0 1.26rem 0;
+    text-decoration: underline;
+    font-size: 190%; }
+
+/* estilos de las tarjetas Home */
+.section-index-tarjetas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* tamaño de las tarjetas de las categorias de la home */
+  /* estilos de textos tarjetas Home */ }
+  .section-index-tarjetas .tarjeta-categoria {
+    width: 33%;
+    padding: 0.63rem; }
+  .section-index-tarjetas .texto-tarjeta {
+    text-align: center;
+    font-size: 1.26rem; }
+
 /* mq para tablet de la pagina index */
 @media (max-width: 1130px) {
   /* logos de registrarse y carrito de compras */
@@ -150,18 +168,18 @@ footer {
     header .logos img {
       width: 1.4rem;
       height: 1.4rem; }
-  main {
+  .main-index {
     /* cinta de la home */ }
-    main .slider-principal img {
+    .main-index .slider-principal img {
       display: block; }
-    main .slider-principal-mobie img {
+    .main-index .slider-principal-mobie img {
       display: none; }
-    main .cinta {
+    .main-index .cinta {
       font-size: larger;
       padding: 0.5rem; }
-  section {
+  .section-index {
     /* titulo de las categorias de la home */ }
-    section .titulo-categorias {
+    .section-index .titulo-categorias {
       margin: 0.2rem 0 1.1rem 0; }
   /* estilos del footer */
   footer {
@@ -189,75 +207,109 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: center; }
-  main section {
+  .main-tienda,
+  .main-nosotros,
+  .main-dudas,
+  .main-contacto {
     /* titulos de las paginas nosotros-tienda-dudas-contacto */
     /* estilos tarjetas Tienda */
     /* titulo del precio */ }
-    main section .titulo-sitio,
-    main section .tienda-sitio,
-    main section .dudas-sitio,
-    main section .contacto-sitio {
+    .main-tienda .titulo-sitio,
+    .main-tienda .tienda-sitio,
+    .main-tienda .dudas-sitio,
+    .main-tienda .contacto-sitio,
+    .main-nosotros .titulo-sitio,
+    .main-nosotros .tienda-sitio,
+    .main-nosotros .dudas-sitio,
+    .main-nosotros .contacto-sitio,
+    .main-dudas .titulo-sitio,
+    .main-dudas .tienda-sitio,
+    .main-dudas .dudas-sitio,
+    .main-dudas .contacto-sitio,
+    .main-contacto .titulo-sitio,
+    .main-contacto .tienda-sitio,
+    .main-contacto .dudas-sitio,
+    .main-contacto .contacto-sitio {
       font-size: 180%; }
-    main section .categoria-peces-frios,
-    main section .categoria-peces-tropicales,
-    main section .categoria-accesorios {
+    .main-tienda .categoria-peces-frios,
+    .main-tienda .categoria-peces-tropicales,
+    .main-tienda .categoria-accesorios,
+    .main-nosotros .categoria-peces-frios,
+    .main-nosotros .categoria-peces-tropicales,
+    .main-nosotros .categoria-accesorios,
+    .main-dudas .categoria-peces-frios,
+    .main-dudas .categoria-peces-tropicales,
+    .main-dudas .categoria-accesorios,
+    .main-contacto .categoria-peces-frios,
+    .main-contacto .categoria-peces-tropicales,
+    .main-contacto .categoria-accesorios {
       grid-template-columns: 1fr; }
-    main section .peces-frios img,
-    main section .peces-tropicales img,
-    main section .accesorios-peceras img {
+    .main-tienda .peces-frios img,
+    .main-tienda .peces-tropicales img,
+    .main-tienda .accesorios-peceras img,
+    .main-nosotros .peces-frios img,
+    .main-nosotros .peces-tropicales img,
+    .main-nosotros .accesorios-peceras img,
+    .main-dudas .peces-frios img,
+    .main-dudas .peces-tropicales img,
+    .main-dudas .accesorios-peceras img,
+    .main-contacto .peces-frios img,
+    .main-contacto .peces-tropicales img,
+    .main-contacto .accesorios-peceras img {
       height: 13rem;
       margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
-    main section .titulo-del-precio {
+    .main-tienda .titulo-del-precio,
+    .main-nosotros .titulo-del-precio,
+    .main-dudas .titulo-del-precio,
+    .main-contacto .titulo-del-precio {
       margin-top: 0.5rem;
       margin-bottom: 0.80rem; }
   /* mq de la pagina nosotros */
   /* titulos de las paginas nosotros-tienda-dudas-contacto */
-  main {
+  .main-nosotros {
     /* estilo del contenido de la pagina nosotros*/
-    /* estilo de la imagen de la biografia */ }
-    main h1 {
+    /* estilo de la imagen de la biografia */
+    /* pagina nosotros-video de la biografia */ }
+    .main-nosotros h1 {
       margin-top: 0.1rem; }
-    main .biografia-sitio {
+    .main-nosotros .biografia-sitio {
       margin: 0.32rem 0.32rem 1.26rem 0.32rem;
       text-align: center;
       font-size: 1rem;
       display: flex;
       flex-direction: column;
       padding: 2.5rem; }
-    main .imagen-biografia img {
+    .main-nosotros .imagen-biografia img {
       padding: 1rem;
       border-radius: 3.15rem;
       height: 450px; }
-    main section {
-      /* pagina nosotros-video de la biografia */ }
-      main section .video-biografia {
-        width: 100%;
-        margin-right: 2rem;
-        border-radius: 3.15rem; }
+    .main-nosotros .video-biografia {
+      width: 100%;
+      margin-right: 2rem;
+      border-radius: 3.15rem; }
   /* mq de la pagina dudas */
-  main {
+  .main-dudas {
     /* pagina dudas */ }
-    main .preguntas {
+    .main-dudas .preguntas {
       margin-bottom: 2rem; }
   /* mq de la pagina contacto */
-  main {
+  .main-contacto {
     /* estilo del texto de contacto*/ }
-    main .contacto-uno p {
+    .main-contacto .contacto-uno p {
       font-size: 1rem;
       margin: 2rem 3rem 2rem 3rem;
       text-align: center; }
-    main form {
+    .main-contacto form {
       /* estilo del formulario */ }
-      main form .fieldset {
+      .main-contacto form .fieldset {
         width: 12%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: auto;
-        border: none;
         gap: 0.32rem; }
-        main form .fieldset input {
+        .main-contacto form .fieldset input {
           width: 200%; }
   /* estilos de la imagen de la ubicación del local */
   .ubicacion-local img {
@@ -277,27 +329,27 @@ footer {
       margin-right: 0.4rem; }
     header .logos {
       display: none; }
-  main {
+  .main-index {
     /* slider principal mobie */
     /* cinta de la home */ }
-    main .slider-principal img {
+    .main-index .slider-principal img {
       display: none; }
-    main .slider-principal-mobie img {
+    .main-index .slider-principal-mobie img {
       width: 100%;
       height: 100%;
       display: block; }
-    main .cinta {
+    .main-index .cinta {
       font-size: larger;
       padding: 0.5rem; }
-  section {
-    /* titulo de las categorias de la home */
-    /* estilos de las tarjetas Home */
-    /* tamaño de las tarjetas de las categorias de la home */ }
-    section .titulo-categorias {
+  .section-index {
+    /* titulo de las categorias de la home */ }
+    .section-index .titulo-categorias {
       margin: 0.2rem 0 1.1rem 0; }
-    section .categorias {
-      flex-direction: column; }
-    section .tarjeta-categoria {
+  .section-index-tarjetas {
+    /* estilos de las tarjetas Home */
+    flex-direction: column;
+    /* tamaño de las tarjetas de las categorias de la home */ }
+    .section-index-tarjetas .tarjeta-categoria {
       width: 90%; }
   /* estilos del footer */
   footer {
@@ -330,67 +382,101 @@ footer {
     footer .footer-legales {
       margin-top: 4rem; }
   /* mq para mobile de la pagina tienda */
-  main div {
-    /* titulos de las paginas nosotros-tienda-dudas-contacto */ }
-    main div .titulo-sitio,
-    main div .tienda-sitio,
-    main div .dudas-sitio,
-    main div .contacto-sitio {
+  .main-tienda,
+  .main-nosotros,
+  .main-dudas,
+  .main-contacto {
+    /* titulos de las paginas nosotros-tienda-dudas-contacto */
+    /* estilos tarjetas Tienda */
+    /* titulo del precio */ }
+    .main-tienda .titulo-sitio,
+    .main-tienda .tienda-sitio,
+    .main-tienda .dudas-sitio,
+    .main-tienda .contacto-sitio,
+    .main-nosotros .titulo-sitio,
+    .main-nosotros .tienda-sitio,
+    .main-nosotros .dudas-sitio,
+    .main-nosotros .contacto-sitio,
+    .main-dudas .titulo-sitio,
+    .main-dudas .tienda-sitio,
+    .main-dudas .dudas-sitio,
+    .main-dudas .contacto-sitio,
+    .main-contacto .titulo-sitio,
+    .main-contacto .tienda-sitio,
+    .main-contacto .dudas-sitio,
+    .main-contacto .contacto-sitio {
       font-size: 160%; }
-    main div section {
-      /* estilos tarjetas Tienda */
-      /* titulo del precio */ }
-      main div section .categoria-peces-frios,
-      main div section .categoria-peces-tropicales,
-      main div section .categoria-accesorios {
-        grid-template-columns: 1fr; }
-      main div section .peces-frios img,
-      main div section .peces-tropicales img,
-      main div section .accesorios-peceras img {
-        height: 8rem;
-        margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
-      main div section .titulo-del-precio {
-        margin-top: 0.5rem;
-        margin-bottom: 0.80rem; }
+    .main-tienda .categoria-peces-frios,
+    .main-tienda .categoria-peces-tropicales,
+    .main-tienda .categoria-accesorios,
+    .main-nosotros .categoria-peces-frios,
+    .main-nosotros .categoria-peces-tropicales,
+    .main-nosotros .categoria-accesorios,
+    .main-dudas .categoria-peces-frios,
+    .main-dudas .categoria-peces-tropicales,
+    .main-dudas .categoria-accesorios,
+    .main-contacto .categoria-peces-frios,
+    .main-contacto .categoria-peces-tropicales,
+    .main-contacto .categoria-accesorios {
+      grid-template-columns: 1fr; }
+    .main-tienda .peces-frios img,
+    .main-tienda .peces-tropicales img,
+    .main-tienda .accesorios-peceras img,
+    .main-nosotros .peces-frios img,
+    .main-nosotros .peces-tropicales img,
+    .main-nosotros .accesorios-peceras img,
+    .main-dudas .peces-frios img,
+    .main-dudas .peces-tropicales img,
+    .main-dudas .accesorios-peceras img,
+    .main-contacto .peces-frios img,
+    .main-contacto .peces-tropicales img,
+    .main-contacto .accesorios-peceras img {
+      height: 8rem;
+      margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
+    .main-tienda .titulo-del-precio,
+    .main-nosotros .titulo-del-precio,
+    .main-dudas .titulo-del-precio,
+    .main-contacto .titulo-del-precio {
+      margin-top: 0.5rem;
+      margin-bottom: 0.80rem; }
   /* mq para mobile de la pagina nosotros */
-  main {
+  .main-nosotros {
     /* estilo del contenido de la pagina nosotros*/
     /* estilo de la imagen de la biografia */
     /* pagina nosotros-video de la biografia */ }
-    main .biografia-sitio {
+    .main-nosotros .biografia-sitio {
       font-size: 1rem;
       display: flex;
       flex-direction: column;
       padding: 1.5rem; }
-    main .imagen-biografia img {
+    .main-nosotros .imagen-biografia img {
       border-radius: 3.15rem;
       width: 100%; }
-    main .video-biografia {
+    .main-nosotros .video-biografia {
       display: none; }
   /* mq para mobile de la pagina dudas */
-  main {
+  .main-dudas {
     /* pagina dudas */ }
-    main .preguntas p {
+    .main-dudas .preguntas {
       margin: 2rem 4rem 3rem 4rem; }
   /* mq para mobile de la pagina contacto */
-  main {
+  .main-contacto {
     /* estilo del texto de contacto*/ }
-    main .contacto-uno p {
+    .main-contacto .contacto-uno p {
       font-size: 1rem;
       margin: 2rem 3rem 2rem 3rem;
       text-align: center; }
-    main form {
+    .main-contacto form {
       /* estilo del formulario */ }
-      main form .fieldset {
+      .main-contacto form .fieldset {
         width: 12%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: auto;
-        border: none;
         gap: 0.32rem; }
-        main form .fieldset input {
+        .main-contacto form .fieldset input {
           width: 390%; }
   /* estilos de la imagen de la ubicación del local */
   .ubicacion-local img {
@@ -401,57 +487,113 @@ footer {
     border-radius: 2rem;
     display: flex; } }
 
-header nav ul li, header .nombre-logo, section .texto-tarjeta, main div .descripcion-producto {
+header nav ul li, header .nombre-logo, .section-index-tarjetas .texto-tarjeta, .main-tienda .descripcion-producto,
+.main-nosotros .descripcion-producto,
+.main-dudas .descripcion-producto,
+.main-contacto .descripcion-producto {
   font-weight: bold; }
 
-main {
-  /* titulos de las paginas */ }
-  main h1 {
+.main-tienda,
+.main-nosotros,
+.main-dudas,
+.main-contacto {
+  /* titulos de las paginas */
+  /* estilos Tienda */
+  /* estilos de banners de la Tienda */
+  /* estilos tarjetas Tienda */
+  /* titulo del producto */
+  /* titulo del precio */ }
+  .main-tienda h1,
+  .main-nosotros h1,
+  .main-dudas h1,
+  .main-contacto h1 {
     text-align: center;
     background-color: #83cbf8;
     margin-top: 0.32rem;
     margin-bottom: 1.26rem;
     /* titulos de las paginas nosotros-tienda-dudas-contacto */ }
-    main h1 .titulo-sitio,
-    main h1 .tienda-sitio,
-    main h1 .dudas-sitio,
-    main h1 .contacto-sitio {
+    .main-tienda h1 .titulo-sitio,
+    .main-tienda h1 .tienda-sitio,
+    .main-tienda h1 .dudas-sitio,
+    .main-tienda h1 .contacto-sitio,
+    .main-nosotros h1 .titulo-sitio,
+    .main-nosotros h1 .tienda-sitio,
+    .main-nosotros h1 .dudas-sitio,
+    .main-nosotros h1 .contacto-sitio,
+    .main-dudas h1 .titulo-sitio,
+    .main-dudas h1 .tienda-sitio,
+    .main-dudas h1 .dudas-sitio,
+    .main-dudas h1 .contacto-sitio,
+    .main-contacto h1 .titulo-sitio,
+    .main-contacto h1 .tienda-sitio,
+    .main-contacto h1 .dudas-sitio,
+    .main-contacto h1 .contacto-sitio {
       margin: 0.32rem 0.32rem 1.26rem 0.32rem;
       text-align: center;
       font-size: 1.7rem; }
-  main div {
-    /* estilos Tienda */
-    /* estilos de banners de la Tienda */
-    /* estilos tarjetas Tienda */
-    /* titulo del producto */
-    /* titulo del precio */ }
-    main div .tienda-categorias {
-      margin-bottom: 1.26rem; }
-    main div .banner-tienda-uno img,
-    main div .banner-tienda-dos img,
-    main div .banner-tienda-tres img {
-      width: 100%;
-      height: 100%; }
-    main div .categoria-peces-frios,
-    main div .categoria-peces-tropicales,
-    main div .categoria-accesorios {
-      display: grid;
-      grid-template-columns: 0.4fr 0.4fr 0.4fr;
-      grid-template-rows: 1fr;
-      padding: 2rem;
-      justify-items: center; }
-    main div .peces-frios img,
-    main div .peces-tropicales img,
-    main div .accesorios-peceras img {
-      height: 15rem; }
-    main div .descripcion-producto {
-      text-align: center;
-      font-size: 1.26rem;
-      margin-bottom: 0.32rem; }
-    main div .titulo-del-precio {
-      text-align: center;
-      margin-bottom: 0.9rem;
-      font-weight: bolder; }
+  .main-tienda .tienda-categorias,
+  .main-nosotros .tienda-categorias,
+  .main-dudas .tienda-categorias,
+  .main-contacto .tienda-categorias {
+    margin-bottom: 1.26rem; }
+  .main-tienda .banner-tienda-uno img,
+  .main-tienda .banner-tienda-dos img,
+  .main-tienda .banner-tienda-tres img,
+  .main-nosotros .banner-tienda-uno img,
+  .main-nosotros .banner-tienda-dos img,
+  .main-nosotros .banner-tienda-tres img,
+  .main-dudas .banner-tienda-uno img,
+  .main-dudas .banner-tienda-dos img,
+  .main-dudas .banner-tienda-tres img,
+  .main-contacto .banner-tienda-uno img,
+  .main-contacto .banner-tienda-dos img,
+  .main-contacto .banner-tienda-tres img {
+    width: 100%;
+    height: 100%; }
+  .main-tienda .categoria-peces-frios,
+  .main-tienda .categoria-peces-tropicales,
+  .main-tienda .categoria-accesorios,
+  .main-nosotros .categoria-peces-frios,
+  .main-nosotros .categoria-peces-tropicales,
+  .main-nosotros .categoria-accesorios,
+  .main-dudas .categoria-peces-frios,
+  .main-dudas .categoria-peces-tropicales,
+  .main-dudas .categoria-accesorios,
+  .main-contacto .categoria-peces-frios,
+  .main-contacto .categoria-peces-tropicales,
+  .main-contacto .categoria-accesorios {
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr 0.4fr;
+    grid-template-rows: 1fr;
+    padding: 2rem;
+    justify-items: center; }
+  .main-tienda .peces-frios img,
+  .main-tienda .peces-tropicales img,
+  .main-tienda .accesorios-peceras img,
+  .main-nosotros .peces-frios img,
+  .main-nosotros .peces-tropicales img,
+  .main-nosotros .accesorios-peceras img,
+  .main-dudas .peces-frios img,
+  .main-dudas .peces-tropicales img,
+  .main-dudas .accesorios-peceras img,
+  .main-contacto .peces-frios img,
+  .main-contacto .peces-tropicales img,
+  .main-contacto .accesorios-peceras img {
+    height: 15rem; }
+  .main-tienda .descripcion-producto,
+  .main-nosotros .descripcion-producto,
+  .main-dudas .descripcion-producto,
+  .main-contacto .descripcion-producto {
+    text-align: center;
+    font-size: 1.26rem;
+    margin-bottom: 0.32rem; }
+  .main-tienda .titulo-del-precio,
+  .main-nosotros .titulo-del-precio,
+  .main-dudas .titulo-del-precio,
+  .main-contacto .titulo-del-precio {
+    text-align: center;
+    margin-bottom: 0.9rem;
+    font-weight: bolder; }
 
 /* mq para tablet de la pagina index */
 @media (max-width: 1130px) {
@@ -463,18 +605,18 @@ main {
     header .logos img {
       width: 1.4rem;
       height: 1.4rem; }
-  main {
+  .main-index {
     /* cinta de la home */ }
-    main .slider-principal img {
+    .main-index .slider-principal img {
       display: block; }
-    main .slider-principal-mobie img {
+    .main-index .slider-principal-mobie img {
       display: none; }
-    main .cinta {
+    .main-index .cinta {
       font-size: larger;
       padding: 0.5rem; }
-  section {
+  .section-index {
     /* titulo de las categorias de la home */ }
-    section .titulo-categorias {
+    .section-index .titulo-categorias {
       margin: 0.2rem 0 1.1rem 0; }
   /* estilos del footer */
   footer {
@@ -502,75 +644,109 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center; }
-  main section {
+  .main-tienda,
+  .main-nosotros,
+  .main-dudas,
+  .main-contacto {
     /* titulos de las paginas nosotros-tienda-dudas-contacto */
     /* estilos tarjetas Tienda */
     /* titulo del precio */ }
-    main section .titulo-sitio,
-    main section .tienda-sitio,
-    main section .dudas-sitio,
-    main section .contacto-sitio {
+    .main-tienda .titulo-sitio,
+    .main-tienda .tienda-sitio,
+    .main-tienda .dudas-sitio,
+    .main-tienda .contacto-sitio,
+    .main-nosotros .titulo-sitio,
+    .main-nosotros .tienda-sitio,
+    .main-nosotros .dudas-sitio,
+    .main-nosotros .contacto-sitio,
+    .main-dudas .titulo-sitio,
+    .main-dudas .tienda-sitio,
+    .main-dudas .dudas-sitio,
+    .main-dudas .contacto-sitio,
+    .main-contacto .titulo-sitio,
+    .main-contacto .tienda-sitio,
+    .main-contacto .dudas-sitio,
+    .main-contacto .contacto-sitio {
       font-size: 180%; }
-    main section .categoria-peces-frios,
-    main section .categoria-peces-tropicales,
-    main section .categoria-accesorios {
+    .main-tienda .categoria-peces-frios,
+    .main-tienda .categoria-peces-tropicales,
+    .main-tienda .categoria-accesorios,
+    .main-nosotros .categoria-peces-frios,
+    .main-nosotros .categoria-peces-tropicales,
+    .main-nosotros .categoria-accesorios,
+    .main-dudas .categoria-peces-frios,
+    .main-dudas .categoria-peces-tropicales,
+    .main-dudas .categoria-accesorios,
+    .main-contacto .categoria-peces-frios,
+    .main-contacto .categoria-peces-tropicales,
+    .main-contacto .categoria-accesorios {
       grid-template-columns: 1fr; }
-    main section .peces-frios img,
-    main section .peces-tropicales img,
-    main section .accesorios-peceras img {
+    .main-tienda .peces-frios img,
+    .main-tienda .peces-tropicales img,
+    .main-tienda .accesorios-peceras img,
+    .main-nosotros .peces-frios img,
+    .main-nosotros .peces-tropicales img,
+    .main-nosotros .accesorios-peceras img,
+    .main-dudas .peces-frios img,
+    .main-dudas .peces-tropicales img,
+    .main-dudas .accesorios-peceras img,
+    .main-contacto .peces-frios img,
+    .main-contacto .peces-tropicales img,
+    .main-contacto .accesorios-peceras img {
       height: 13rem;
       margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
-    main section .titulo-del-precio {
+    .main-tienda .titulo-del-precio,
+    .main-nosotros .titulo-del-precio,
+    .main-dudas .titulo-del-precio,
+    .main-contacto .titulo-del-precio {
       margin-top: 0.5rem;
       margin-bottom: 0.80rem; }
   /* mq de la pagina nosotros */
   /* titulos de las paginas nosotros-tienda-dudas-contacto */
-  main {
+  .main-nosotros {
     /* estilo del contenido de la pagina nosotros*/
-    /* estilo de la imagen de la biografia */ }
-    main h1 {
+    /* estilo de la imagen de la biografia */
+    /* pagina nosotros-video de la biografia */ }
+    .main-nosotros h1 {
       margin-top: 0.1rem; }
-    main .biografia-sitio {
+    .main-nosotros .biografia-sitio {
       margin: 0.32rem 0.32rem 1.26rem 0.32rem;
       text-align: center;
       font-size: 1rem;
       display: flex;
       flex-direction: column;
       padding: 2.5rem; }
-    main .imagen-biografia img {
+    .main-nosotros .imagen-biografia img {
       padding: 1rem;
       border-radius: 3.15rem;
       height: 450px; }
-    main section {
-      /* pagina nosotros-video de la biografia */ }
-      main section .video-biografia {
-        width: 100%;
-        margin-right: 2rem;
-        border-radius: 3.15rem; }
+    .main-nosotros .video-biografia {
+      width: 100%;
+      margin-right: 2rem;
+      border-radius: 3.15rem; }
   /* mq de la pagina dudas */
-  main {
+  .main-dudas {
     /* pagina dudas */ }
-    main .preguntas {
+    .main-dudas .preguntas {
       margin-bottom: 2rem; }
   /* mq de la pagina contacto */
-  main {
+  .main-contacto {
     /* estilo del texto de contacto*/ }
-    main .contacto-uno p {
+    .main-contacto .contacto-uno p {
       font-size: 1rem;
       margin: 2rem 3rem 2rem 3rem;
       text-align: center; }
-    main form {
+    .main-contacto form {
       /* estilo del formulario */ }
-      main form .fieldset {
+      .main-contacto form .fieldset {
         width: 12%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: auto;
-        border: none;
         gap: 0.32rem; }
-        main form .fieldset input {
+        .main-contacto form .fieldset input {
           width: 200%; }
   /* estilos de la imagen de la ubicación del local */
   .ubicacion-local img {
@@ -590,27 +766,27 @@ main {
       margin-right: 0.4rem; }
     header .logos {
       display: none; }
-  main {
+  .main-index {
     /* slider principal mobie */
     /* cinta de la home */ }
-    main .slider-principal img {
+    .main-index .slider-principal img {
       display: none; }
-    main .slider-principal-mobie img {
+    .main-index .slider-principal-mobie img {
       width: 100%;
       height: 100%;
       display: block; }
-    main .cinta {
+    .main-index .cinta {
       font-size: larger;
       padding: 0.5rem; }
-  section {
-    /* titulo de las categorias de la home */
-    /* estilos de las tarjetas Home */
-    /* tamaño de las tarjetas de las categorias de la home */ }
-    section .titulo-categorias {
+  .section-index {
+    /* titulo de las categorias de la home */ }
+    .section-index .titulo-categorias {
       margin: 0.2rem 0 1.1rem 0; }
-    section .categorias {
-      flex-direction: column; }
-    section .tarjeta-categoria {
+  .section-index-tarjetas {
+    /* estilos de las tarjetas Home */
+    flex-direction: column;
+    /* tamaño de las tarjetas de las categorias de la home */ }
+    .section-index-tarjetas .tarjeta-categoria {
       width: 90%; }
   /* estilos del footer */
   footer {
@@ -643,67 +819,101 @@ main {
     footer .footer-legales {
       margin-top: 4rem; }
   /* mq para mobile de la pagina tienda */
-  main div {
-    /* titulos de las paginas nosotros-tienda-dudas-contacto */ }
-    main div .titulo-sitio,
-    main div .tienda-sitio,
-    main div .dudas-sitio,
-    main div .contacto-sitio {
+  .main-tienda,
+  .main-nosotros,
+  .main-dudas,
+  .main-contacto {
+    /* titulos de las paginas nosotros-tienda-dudas-contacto */
+    /* estilos tarjetas Tienda */
+    /* titulo del precio */ }
+    .main-tienda .titulo-sitio,
+    .main-tienda .tienda-sitio,
+    .main-tienda .dudas-sitio,
+    .main-tienda .contacto-sitio,
+    .main-nosotros .titulo-sitio,
+    .main-nosotros .tienda-sitio,
+    .main-nosotros .dudas-sitio,
+    .main-nosotros .contacto-sitio,
+    .main-dudas .titulo-sitio,
+    .main-dudas .tienda-sitio,
+    .main-dudas .dudas-sitio,
+    .main-dudas .contacto-sitio,
+    .main-contacto .titulo-sitio,
+    .main-contacto .tienda-sitio,
+    .main-contacto .dudas-sitio,
+    .main-contacto .contacto-sitio {
       font-size: 160%; }
-    main div section {
-      /* estilos tarjetas Tienda */
-      /* titulo del precio */ }
-      main div section .categoria-peces-frios,
-      main div section .categoria-peces-tropicales,
-      main div section .categoria-accesorios {
-        grid-template-columns: 1fr; }
-      main div section .peces-frios img,
-      main div section .peces-tropicales img,
-      main div section .accesorios-peceras img {
-        height: 8rem;
-        margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
-      main div section .titulo-del-precio {
-        margin-top: 0.5rem;
-        margin-bottom: 0.80rem; }
+    .main-tienda .categoria-peces-frios,
+    .main-tienda .categoria-peces-tropicales,
+    .main-tienda .categoria-accesorios,
+    .main-nosotros .categoria-peces-frios,
+    .main-nosotros .categoria-peces-tropicales,
+    .main-nosotros .categoria-accesorios,
+    .main-dudas .categoria-peces-frios,
+    .main-dudas .categoria-peces-tropicales,
+    .main-dudas .categoria-accesorios,
+    .main-contacto .categoria-peces-frios,
+    .main-contacto .categoria-peces-tropicales,
+    .main-contacto .categoria-accesorios {
+      grid-template-columns: 1fr; }
+    .main-tienda .peces-frios img,
+    .main-tienda .peces-tropicales img,
+    .main-tienda .accesorios-peceras img,
+    .main-nosotros .peces-frios img,
+    .main-nosotros .peces-tropicales img,
+    .main-nosotros .accesorios-peceras img,
+    .main-dudas .peces-frios img,
+    .main-dudas .peces-tropicales img,
+    .main-dudas .accesorios-peceras img,
+    .main-contacto .peces-frios img,
+    .main-contacto .peces-tropicales img,
+    .main-contacto .accesorios-peceras img {
+      height: 8rem;
+      margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
+    .main-tienda .titulo-del-precio,
+    .main-nosotros .titulo-del-precio,
+    .main-dudas .titulo-del-precio,
+    .main-contacto .titulo-del-precio {
+      margin-top: 0.5rem;
+      margin-bottom: 0.80rem; }
   /* mq para mobile de la pagina nosotros */
-  main {
+  .main-nosotros {
     /* estilo del contenido de la pagina nosotros*/
     /* estilo de la imagen de la biografia */
     /* pagina nosotros-video de la biografia */ }
-    main .biografia-sitio {
+    .main-nosotros .biografia-sitio {
       font-size: 1rem;
       display: flex;
       flex-direction: column;
       padding: 1.5rem; }
-    main .imagen-biografia img {
+    .main-nosotros .imagen-biografia img {
       border-radius: 3.15rem;
       width: 100%; }
-    main .video-biografia {
+    .main-nosotros .video-biografia {
       display: none; }
   /* mq para mobile de la pagina dudas */
-  main {
+  .main-dudas {
     /* pagina dudas */ }
-    main .preguntas p {
+    .main-dudas .preguntas {
       margin: 2rem 4rem 3rem 4rem; }
   /* mq para mobile de la pagina contacto */
-  main {
+  .main-contacto {
     /* estilo del texto de contacto*/ }
-    main .contacto-uno p {
+    .main-contacto .contacto-uno p {
       font-size: 1rem;
       margin: 2rem 3rem 2rem 3rem;
       text-align: center; }
-    main form {
+    .main-contacto form {
       /* estilo del formulario */ }
-      main form .fieldset {
+      .main-contacto form .fieldset {
         width: 12%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: auto;
-        border: none;
         gap: 0.32rem; }
-        main form .fieldset input {
+        .main-contacto form .fieldset input {
           width: 390%; }
   /* estilos de la imagen de la ubicación del local */
   .ubicacion-local img {
@@ -714,24 +924,23 @@ main {
     border-radius: 2rem;
     display: flex; } }
 
-main {
+.main-nosotros {
   /* estilo del contenido de la pagina nosotros*/
-  /* estilo de la imagen de la biografia */ }
-  main .biografia-sitio {
+  /* estilo de la imagen de la biografia */
+  /* pagina nosotros-video de la biografia */ }
+  .main-nosotros .biografia-sitio {
     font-size: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 2.5rem; }
-  main .imagen-biografia img {
+  .main-nosotros .imagen-biografia img {
     padding: 1rem;
     border-radius: 3.15rem;
     height: 450px; }
-  main section {
-    /* pagina nosotros-video de la biografia */ }
-    main section .video-biografia {
-      width: 100%;
-      margin-right: 2rem; }
+  .main-nosotros .video-biografia {
+    width: 100%;
+    margin-right: 2rem; }
 
 /* mq para tablet de la pagina index */
 @media (max-width: 1130px) {
@@ -743,18 +952,18 @@ main {
     header .logos img {
       width: 1.4rem;
       height: 1.4rem; }
-  main {
+  .main-index {
     /* cinta de la home */ }
-    main .slider-principal img {
+    .main-index .slider-principal img {
       display: block; }
-    main .slider-principal-mobie img {
+    .main-index .slider-principal-mobie img {
       display: none; }
-    main .cinta {
+    .main-index .cinta {
       font-size: larger;
       padding: 0.5rem; }
-  section {
+  .section-index {
     /* titulo de las categorias de la home */ }
-    section .titulo-categorias {
+    .section-index .titulo-categorias {
       margin: 0.2rem 0 1.1rem 0; }
   /* estilos del footer */
   footer {
@@ -782,75 +991,109 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center; }
-  main section {
+  .main-tienda,
+  .main-nosotros,
+  .main-dudas,
+  .main-contacto {
     /* titulos de las paginas nosotros-tienda-dudas-contacto */
     /* estilos tarjetas Tienda */
     /* titulo del precio */ }
-    main section .titulo-sitio,
-    main section .tienda-sitio,
-    main section .dudas-sitio,
-    main section .contacto-sitio {
+    .main-tienda .titulo-sitio,
+    .main-tienda .tienda-sitio,
+    .main-tienda .dudas-sitio,
+    .main-tienda .contacto-sitio,
+    .main-nosotros .titulo-sitio,
+    .main-nosotros .tienda-sitio,
+    .main-nosotros .dudas-sitio,
+    .main-nosotros .contacto-sitio,
+    .main-dudas .titulo-sitio,
+    .main-dudas .tienda-sitio,
+    .main-dudas .dudas-sitio,
+    .main-dudas .contacto-sitio,
+    .main-contacto .titulo-sitio,
+    .main-contacto .tienda-sitio,
+    .main-contacto .dudas-sitio,
+    .main-contacto .contacto-sitio {
       font-size: 180%; }
-    main section .categoria-peces-frios,
-    main section .categoria-peces-tropicales,
-    main section .categoria-accesorios {
+    .main-tienda .categoria-peces-frios,
+    .main-tienda .categoria-peces-tropicales,
+    .main-tienda .categoria-accesorios,
+    .main-nosotros .categoria-peces-frios,
+    .main-nosotros .categoria-peces-tropicales,
+    .main-nosotros .categoria-accesorios,
+    .main-dudas .categoria-peces-frios,
+    .main-dudas .categoria-peces-tropicales,
+    .main-dudas .categoria-accesorios,
+    .main-contacto .categoria-peces-frios,
+    .main-contacto .categoria-peces-tropicales,
+    .main-contacto .categoria-accesorios {
       grid-template-columns: 1fr; }
-    main section .peces-frios img,
-    main section .peces-tropicales img,
-    main section .accesorios-peceras img {
+    .main-tienda .peces-frios img,
+    .main-tienda .peces-tropicales img,
+    .main-tienda .accesorios-peceras img,
+    .main-nosotros .peces-frios img,
+    .main-nosotros .peces-tropicales img,
+    .main-nosotros .accesorios-peceras img,
+    .main-dudas .peces-frios img,
+    .main-dudas .peces-tropicales img,
+    .main-dudas .accesorios-peceras img,
+    .main-contacto .peces-frios img,
+    .main-contacto .peces-tropicales img,
+    .main-contacto .accesorios-peceras img {
       height: 13rem;
       margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
-    main section .titulo-del-precio {
+    .main-tienda .titulo-del-precio,
+    .main-nosotros .titulo-del-precio,
+    .main-dudas .titulo-del-precio,
+    .main-contacto .titulo-del-precio {
       margin-top: 0.5rem;
       margin-bottom: 0.80rem; }
   /* mq de la pagina nosotros */
   /* titulos de las paginas nosotros-tienda-dudas-contacto */
-  main {
+  .main-nosotros {
     /* estilo del contenido de la pagina nosotros*/
-    /* estilo de la imagen de la biografia */ }
-    main h1 {
+    /* estilo de la imagen de la biografia */
+    /* pagina nosotros-video de la biografia */ }
+    .main-nosotros h1 {
       margin-top: 0.1rem; }
-    main .biografia-sitio {
+    .main-nosotros .biografia-sitio {
       margin: 0.32rem 0.32rem 1.26rem 0.32rem;
       text-align: center;
       font-size: 1rem;
       display: flex;
       flex-direction: column;
       padding: 2.5rem; }
-    main .imagen-biografia img {
+    .main-nosotros .imagen-biografia img {
       padding: 1rem;
       border-radius: 3.15rem;
       height: 450px; }
-    main section {
-      /* pagina nosotros-video de la biografia */ }
-      main section .video-biografia {
-        width: 100%;
-        margin-right: 2rem;
-        border-radius: 3.15rem; }
+    .main-nosotros .video-biografia {
+      width: 100%;
+      margin-right: 2rem;
+      border-radius: 3.15rem; }
   /* mq de la pagina dudas */
-  main {
+  .main-dudas {
     /* pagina dudas */ }
-    main .preguntas {
+    .main-dudas .preguntas {
       margin-bottom: 2rem; }
   /* mq de la pagina contacto */
-  main {
+  .main-contacto {
     /* estilo del texto de contacto*/ }
-    main .contacto-uno p {
+    .main-contacto .contacto-uno p {
       font-size: 1rem;
       margin: 2rem 3rem 2rem 3rem;
       text-align: center; }
-    main form {
+    .main-contacto form {
       /* estilo del formulario */ }
-      main form .fieldset {
+      .main-contacto form .fieldset {
         width: 12%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: auto;
-        border: none;
         gap: 0.32rem; }
-        main form .fieldset input {
+        .main-contacto form .fieldset input {
           width: 200%; }
   /* estilos de la imagen de la ubicación del local */
   .ubicacion-local img {
@@ -870,27 +1113,27 @@ main {
       margin-right: 0.4rem; }
     header .logos {
       display: none; }
-  main {
+  .main-index {
     /* slider principal mobie */
     /* cinta de la home */ }
-    main .slider-principal img {
+    .main-index .slider-principal img {
       display: none; }
-    main .slider-principal-mobie img {
+    .main-index .slider-principal-mobie img {
       width: 100%;
       height: 100%;
       display: block; }
-    main .cinta {
+    .main-index .cinta {
       font-size: larger;
       padding: 0.5rem; }
-  section {
-    /* titulo de las categorias de la home */
-    /* estilos de las tarjetas Home */
-    /* tamaño de las tarjetas de las categorias de la home */ }
-    section .titulo-categorias {
+  .section-index {
+    /* titulo de las categorias de la home */ }
+    .section-index .titulo-categorias {
       margin: 0.2rem 0 1.1rem 0; }
-    section .categorias {
-      flex-direction: column; }
-    section .tarjeta-categoria {
+  .section-index-tarjetas {
+    /* estilos de las tarjetas Home */
+    flex-direction: column;
+    /* tamaño de las tarjetas de las categorias de la home */ }
+    .section-index-tarjetas .tarjeta-categoria {
       width: 90%; }
   /* estilos del footer */
   footer {
@@ -923,67 +1166,101 @@ main {
     footer .footer-legales {
       margin-top: 4rem; }
   /* mq para mobile de la pagina tienda */
-  main div {
-    /* titulos de las paginas nosotros-tienda-dudas-contacto */ }
-    main div .titulo-sitio,
-    main div .tienda-sitio,
-    main div .dudas-sitio,
-    main div .contacto-sitio {
+  .main-tienda,
+  .main-nosotros,
+  .main-dudas,
+  .main-contacto {
+    /* titulos de las paginas nosotros-tienda-dudas-contacto */
+    /* estilos tarjetas Tienda */
+    /* titulo del precio */ }
+    .main-tienda .titulo-sitio,
+    .main-tienda .tienda-sitio,
+    .main-tienda .dudas-sitio,
+    .main-tienda .contacto-sitio,
+    .main-nosotros .titulo-sitio,
+    .main-nosotros .tienda-sitio,
+    .main-nosotros .dudas-sitio,
+    .main-nosotros .contacto-sitio,
+    .main-dudas .titulo-sitio,
+    .main-dudas .tienda-sitio,
+    .main-dudas .dudas-sitio,
+    .main-dudas .contacto-sitio,
+    .main-contacto .titulo-sitio,
+    .main-contacto .tienda-sitio,
+    .main-contacto .dudas-sitio,
+    .main-contacto .contacto-sitio {
       font-size: 160%; }
-    main div section {
-      /* estilos tarjetas Tienda */
-      /* titulo del precio */ }
-      main div section .categoria-peces-frios,
-      main div section .categoria-peces-tropicales,
-      main div section .categoria-accesorios {
-        grid-template-columns: 1fr; }
-      main div section .peces-frios img,
-      main div section .peces-tropicales img,
-      main div section .accesorios-peceras img {
-        height: 8rem;
-        margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
-      main div section .titulo-del-precio {
-        margin-top: 0.5rem;
-        margin-bottom: 0.80rem; }
+    .main-tienda .categoria-peces-frios,
+    .main-tienda .categoria-peces-tropicales,
+    .main-tienda .categoria-accesorios,
+    .main-nosotros .categoria-peces-frios,
+    .main-nosotros .categoria-peces-tropicales,
+    .main-nosotros .categoria-accesorios,
+    .main-dudas .categoria-peces-frios,
+    .main-dudas .categoria-peces-tropicales,
+    .main-dudas .categoria-accesorios,
+    .main-contacto .categoria-peces-frios,
+    .main-contacto .categoria-peces-tropicales,
+    .main-contacto .categoria-accesorios {
+      grid-template-columns: 1fr; }
+    .main-tienda .peces-frios img,
+    .main-tienda .peces-tropicales img,
+    .main-tienda .accesorios-peceras img,
+    .main-nosotros .peces-frios img,
+    .main-nosotros .peces-tropicales img,
+    .main-nosotros .accesorios-peceras img,
+    .main-dudas .peces-frios img,
+    .main-dudas .peces-tropicales img,
+    .main-dudas .accesorios-peceras img,
+    .main-contacto .peces-frios img,
+    .main-contacto .peces-tropicales img,
+    .main-contacto .accesorios-peceras img {
+      height: 8rem;
+      margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
+    .main-tienda .titulo-del-precio,
+    .main-nosotros .titulo-del-precio,
+    .main-dudas .titulo-del-precio,
+    .main-contacto .titulo-del-precio {
+      margin-top: 0.5rem;
+      margin-bottom: 0.80rem; }
   /* mq para mobile de la pagina nosotros */
-  main {
+  .main-nosotros {
     /* estilo del contenido de la pagina nosotros*/
     /* estilo de la imagen de la biografia */
     /* pagina nosotros-video de la biografia */ }
-    main .biografia-sitio {
+    .main-nosotros .biografia-sitio {
       font-size: 1rem;
       display: flex;
       flex-direction: column;
       padding: 1.5rem; }
-    main .imagen-biografia img {
+    .main-nosotros .imagen-biografia img {
       border-radius: 3.15rem;
       width: 100%; }
-    main .video-biografia {
+    .main-nosotros .video-biografia {
       display: none; }
   /* mq para mobile de la pagina dudas */
-  main {
+  .main-dudas {
     /* pagina dudas */ }
-    main .preguntas p {
+    .main-dudas .preguntas {
       margin: 2rem 4rem 3rem 4rem; }
   /* mq para mobile de la pagina contacto */
-  main {
+  .main-contacto {
     /* estilo del texto de contacto*/ }
-    main .contacto-uno p {
+    .main-contacto .contacto-uno p {
       font-size: 1rem;
       margin: 2rem 3rem 2rem 3rem;
       text-align: center; }
-    main form {
+    .main-contacto form {
       /* estilo del formulario */ }
-      main form .fieldset {
+      .main-contacto form .fieldset {
         width: 12%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: auto;
-        border: none;
         gap: 0.32rem; }
-        main form .fieldset input {
+        .main-contacto form .fieldset input {
           width: 390%; }
   /* estilos de la imagen de la ubicación del local */
   .ubicacion-local img {
@@ -994,9 +1271,9 @@ main {
     border-radius: 2rem;
     display: flex; } }
 
-main {
+.main-dudas {
   /* pagina dudas */ }
-  main .preguntas p {
+  .main-dudas .preguntas {
     text-align: center;
     margin: 3rem 9rem 4rem 9rem;
     font-size: 1rem; }
@@ -1011,18 +1288,18 @@ main {
     header .logos img {
       width: 1.4rem;
       height: 1.4rem; }
-  main {
+  .main-index {
     /* cinta de la home */ }
-    main .slider-principal img {
+    .main-index .slider-principal img {
       display: block; }
-    main .slider-principal-mobie img {
+    .main-index .slider-principal-mobie img {
       display: none; }
-    main .cinta {
+    .main-index .cinta {
       font-size: larger;
       padding: 0.5rem; }
-  section {
+  .section-index {
     /* titulo de las categorias de la home */ }
-    section .titulo-categorias {
+    .section-index .titulo-categorias {
       margin: 0.2rem 0 1.1rem 0; }
   /* estilos del footer */
   footer {
@@ -1050,75 +1327,109 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center; }
-  main section {
+  .main-tienda,
+  .main-nosotros,
+  .main-dudas,
+  .main-contacto {
     /* titulos de las paginas nosotros-tienda-dudas-contacto */
     /* estilos tarjetas Tienda */
     /* titulo del precio */ }
-    main section .titulo-sitio,
-    main section .tienda-sitio,
-    main section .dudas-sitio,
-    main section .contacto-sitio {
+    .main-tienda .titulo-sitio,
+    .main-tienda .tienda-sitio,
+    .main-tienda .dudas-sitio,
+    .main-tienda .contacto-sitio,
+    .main-nosotros .titulo-sitio,
+    .main-nosotros .tienda-sitio,
+    .main-nosotros .dudas-sitio,
+    .main-nosotros .contacto-sitio,
+    .main-dudas .titulo-sitio,
+    .main-dudas .tienda-sitio,
+    .main-dudas .dudas-sitio,
+    .main-dudas .contacto-sitio,
+    .main-contacto .titulo-sitio,
+    .main-contacto .tienda-sitio,
+    .main-contacto .dudas-sitio,
+    .main-contacto .contacto-sitio {
       font-size: 180%; }
-    main section .categoria-peces-frios,
-    main section .categoria-peces-tropicales,
-    main section .categoria-accesorios {
+    .main-tienda .categoria-peces-frios,
+    .main-tienda .categoria-peces-tropicales,
+    .main-tienda .categoria-accesorios,
+    .main-nosotros .categoria-peces-frios,
+    .main-nosotros .categoria-peces-tropicales,
+    .main-nosotros .categoria-accesorios,
+    .main-dudas .categoria-peces-frios,
+    .main-dudas .categoria-peces-tropicales,
+    .main-dudas .categoria-accesorios,
+    .main-contacto .categoria-peces-frios,
+    .main-contacto .categoria-peces-tropicales,
+    .main-contacto .categoria-accesorios {
       grid-template-columns: 1fr; }
-    main section .peces-frios img,
-    main section .peces-tropicales img,
-    main section .accesorios-peceras img {
+    .main-tienda .peces-frios img,
+    .main-tienda .peces-tropicales img,
+    .main-tienda .accesorios-peceras img,
+    .main-nosotros .peces-frios img,
+    .main-nosotros .peces-tropicales img,
+    .main-nosotros .accesorios-peceras img,
+    .main-dudas .peces-frios img,
+    .main-dudas .peces-tropicales img,
+    .main-dudas .accesorios-peceras img,
+    .main-contacto .peces-frios img,
+    .main-contacto .peces-tropicales img,
+    .main-contacto .accesorios-peceras img {
       height: 13rem;
       margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
-    main section .titulo-del-precio {
+    .main-tienda .titulo-del-precio,
+    .main-nosotros .titulo-del-precio,
+    .main-dudas .titulo-del-precio,
+    .main-contacto .titulo-del-precio {
       margin-top: 0.5rem;
       margin-bottom: 0.80rem; }
   /* mq de la pagina nosotros */
   /* titulos de las paginas nosotros-tienda-dudas-contacto */
-  main {
+  .main-nosotros {
     /* estilo del contenido de la pagina nosotros*/
-    /* estilo de la imagen de la biografia */ }
-    main h1 {
+    /* estilo de la imagen de la biografia */
+    /* pagina nosotros-video de la biografia */ }
+    .main-nosotros h1 {
       margin-top: 0.1rem; }
-    main .biografia-sitio {
+    .main-nosotros .biografia-sitio {
       margin: 0.32rem 0.32rem 1.26rem 0.32rem;
       text-align: center;
       font-size: 1rem;
       display: flex;
       flex-direction: column;
       padding: 2.5rem; }
-    main .imagen-biografia img {
+    .main-nosotros .imagen-biografia img {
       padding: 1rem;
       border-radius: 3.15rem;
       height: 450px; }
-    main section {
-      /* pagina nosotros-video de la biografia */ }
-      main section .video-biografia {
-        width: 100%;
-        margin-right: 2rem;
-        border-radius: 3.15rem; }
+    .main-nosotros .video-biografia {
+      width: 100%;
+      margin-right: 2rem;
+      border-radius: 3.15rem; }
   /* mq de la pagina dudas */
-  main {
+  .main-dudas {
     /* pagina dudas */ }
-    main .preguntas {
+    .main-dudas .preguntas {
       margin-bottom: 2rem; }
   /* mq de la pagina contacto */
-  main {
+  .main-contacto {
     /* estilo del texto de contacto*/ }
-    main .contacto-uno p {
+    .main-contacto .contacto-uno p {
       font-size: 1rem;
       margin: 2rem 3rem 2rem 3rem;
       text-align: center; }
-    main form {
+    .main-contacto form {
       /* estilo del formulario */ }
-      main form .fieldset {
+      .main-contacto form .fieldset {
         width: 12%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: auto;
-        border: none;
         gap: 0.32rem; }
-        main form .fieldset input {
+        .main-contacto form .fieldset input {
           width: 200%; }
   /* estilos de la imagen de la ubicación del local */
   .ubicacion-local img {
@@ -1138,27 +1449,27 @@ main {
       margin-right: 0.4rem; }
     header .logos {
       display: none; }
-  main {
+  .main-index {
     /* slider principal mobie */
     /* cinta de la home */ }
-    main .slider-principal img {
+    .main-index .slider-principal img {
       display: none; }
-    main .slider-principal-mobie img {
+    .main-index .slider-principal-mobie img {
       width: 100%;
       height: 100%;
       display: block; }
-    main .cinta {
+    .main-index .cinta {
       font-size: larger;
       padding: 0.5rem; }
-  section {
-    /* titulo de las categorias de la home */
-    /* estilos de las tarjetas Home */
-    /* tamaño de las tarjetas de las categorias de la home */ }
-    section .titulo-categorias {
+  .section-index {
+    /* titulo de las categorias de la home */ }
+    .section-index .titulo-categorias {
       margin: 0.2rem 0 1.1rem 0; }
-    section .categorias {
-      flex-direction: column; }
-    section .tarjeta-categoria {
+  .section-index-tarjetas {
+    /* estilos de las tarjetas Home */
+    flex-direction: column;
+    /* tamaño de las tarjetas de las categorias de la home */ }
+    .section-index-tarjetas .tarjeta-categoria {
       width: 90%; }
   /* estilos del footer */
   footer {
@@ -1191,67 +1502,463 @@ main {
     footer .footer-legales {
       margin-top: 4rem; }
   /* mq para mobile de la pagina tienda */
-  main div {
-    /* titulos de las paginas nosotros-tienda-dudas-contacto */ }
-    main div .titulo-sitio,
-    main div .tienda-sitio,
-    main div .dudas-sitio,
-    main div .contacto-sitio {
+  .main-tienda,
+  .main-nosotros,
+  .main-dudas,
+  .main-contacto {
+    /* titulos de las paginas nosotros-tienda-dudas-contacto */
+    /* estilos tarjetas Tienda */
+    /* titulo del precio */ }
+    .main-tienda .titulo-sitio,
+    .main-tienda .tienda-sitio,
+    .main-tienda .dudas-sitio,
+    .main-tienda .contacto-sitio,
+    .main-nosotros .titulo-sitio,
+    .main-nosotros .tienda-sitio,
+    .main-nosotros .dudas-sitio,
+    .main-nosotros .contacto-sitio,
+    .main-dudas .titulo-sitio,
+    .main-dudas .tienda-sitio,
+    .main-dudas .dudas-sitio,
+    .main-dudas .contacto-sitio,
+    .main-contacto .titulo-sitio,
+    .main-contacto .tienda-sitio,
+    .main-contacto .dudas-sitio,
+    .main-contacto .contacto-sitio {
       font-size: 160%; }
-    main div section {
-      /* estilos tarjetas Tienda */
-      /* titulo del precio */ }
-      main div section .categoria-peces-frios,
-      main div section .categoria-peces-tropicales,
-      main div section .categoria-accesorios {
-        grid-template-columns: 1fr; }
-      main div section .peces-frios img,
-      main div section .peces-tropicales img,
-      main div section .accesorios-peceras img {
-        height: 8rem;
-        margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
-      main div section .titulo-del-precio {
-        margin-top: 0.5rem;
-        margin-bottom: 0.80rem; }
+    .main-tienda .categoria-peces-frios,
+    .main-tienda .categoria-peces-tropicales,
+    .main-tienda .categoria-accesorios,
+    .main-nosotros .categoria-peces-frios,
+    .main-nosotros .categoria-peces-tropicales,
+    .main-nosotros .categoria-accesorios,
+    .main-dudas .categoria-peces-frios,
+    .main-dudas .categoria-peces-tropicales,
+    .main-dudas .categoria-accesorios,
+    .main-contacto .categoria-peces-frios,
+    .main-contacto .categoria-peces-tropicales,
+    .main-contacto .categoria-accesorios {
+      grid-template-columns: 1fr; }
+    .main-tienda .peces-frios img,
+    .main-tienda .peces-tropicales img,
+    .main-tienda .accesorios-peceras img,
+    .main-nosotros .peces-frios img,
+    .main-nosotros .peces-tropicales img,
+    .main-nosotros .accesorios-peceras img,
+    .main-dudas .peces-frios img,
+    .main-dudas .peces-tropicales img,
+    .main-dudas .accesorios-peceras img,
+    .main-contacto .peces-frios img,
+    .main-contacto .peces-tropicales img,
+    .main-contacto .accesorios-peceras img {
+      height: 8rem;
+      margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
+    .main-tienda .titulo-del-precio,
+    .main-nosotros .titulo-del-precio,
+    .main-dudas .titulo-del-precio,
+    .main-contacto .titulo-del-precio {
+      margin-top: 0.5rem;
+      margin-bottom: 0.80rem; }
   /* mq para mobile de la pagina nosotros */
-  main {
+  .main-nosotros {
     /* estilo del contenido de la pagina nosotros*/
     /* estilo de la imagen de la biografia */
     /* pagina nosotros-video de la biografia */ }
-    main .biografia-sitio {
+    .main-nosotros .biografia-sitio {
       font-size: 1rem;
       display: flex;
       flex-direction: column;
       padding: 1.5rem; }
-    main .imagen-biografia img {
+    .main-nosotros .imagen-biografia img {
       border-radius: 3.15rem;
       width: 100%; }
-    main .video-biografia {
+    .main-nosotros .video-biografia {
       display: none; }
   /* mq para mobile de la pagina dudas */
-  main {
+  .main-dudas {
     /* pagina dudas */ }
-    main .preguntas p {
+    .main-dudas .preguntas {
       margin: 2rem 4rem 3rem 4rem; }
   /* mq para mobile de la pagina contacto */
-  main {
+  .main-contacto {
     /* estilo del texto de contacto*/ }
-    main .contacto-uno p {
+    .main-contacto .contacto-uno p {
       font-size: 1rem;
       margin: 2rem 3rem 2rem 3rem;
       text-align: center; }
-    main form {
+    .main-contacto form {
       /* estilo del formulario */ }
-      main form .fieldset {
+      .main-contacto form .fieldset {
         width: 12%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: auto;
-        border: none;
         gap: 0.32rem; }
-        main form .fieldset input {
+        .main-contacto form .fieldset input {
+          width: 390%; }
+  /* estilos de la imagen de la ubicación del local */
+  .ubicacion-local img {
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 2rem;
+    display: flex; } }
+
+.main-contacto {
+  /* pagina contacto */ }
+  .main-contacto .contacto-uno p {
+    font-size: 1rem;
+    margin: 2rem 5rem 2rem 5rem;
+    text-align: center; }
+  .main-contacto form {
+    /* estilo del formulario */ }
+    .main-contacto form .fieldset {
+      width: 12%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 21rem;
+      gap: 0.32rem;
+      margin-top: 1.26rem;
+      margin-bottom: 1.89rem; }
+      .main-contacto form .fieldset input {
+        border-radius: 0.51rem;
+        border: none;
+        padding: 0.38rem;
+        outline: none;
+        width: 140%; }
+      .main-contacto form .fieldset .boton-enviar,
+      .main-contacto form .fieldset .boton-borrar {
+        padding: 0.76rem; }
+
+.ubicacion-local img {
+  width: 40%;
+  margin: -40rem 0rem 0rem 40rem;
+  border-radius: 2rem; }
+
+/* mq para tablet de la pagina index */
+@media (max-width: 1130px) {
+  /* logos de registrarse y carrito de compras */
+  header .logos {
+    align-items: flex-start;
+    gap: 1rem;
+    padding-top: 2rem; }
+    header .logos img {
+      width: 1.4rem;
+      height: 1.4rem; }
+  .main-index {
+    /* cinta de la home */ }
+    .main-index .slider-principal img {
+      display: block; }
+    .main-index .slider-principal-mobie img {
+      display: none; }
+    .main-index .cinta {
+      font-size: larger;
+      padding: 0.5rem; }
+  .section-index {
+    /* titulo de las categorias de la home */ }
+    .section-index .titulo-categorias {
+      margin: 0.2rem 0 1.1rem 0; }
+  /* estilos del footer */
+  footer {
+    padding: 0.6rem;
+    /* footer links */
+    /* estilo de los links de las paginas*/
+    /* footer iconos de los metodos de pagos */
+    /* estilo del titulos redes sociales */ }
+    footer .footer-links {
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem; }
+    footer .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; }
+    footer .iconos-pagos img {
+      display: flex;
+      flex-direction: column; }
+    footer .block-redes {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+  .main-tienda,
+  .main-nosotros,
+  .main-dudas,
+  .main-contacto {
+    /* titulos de las paginas nosotros-tienda-dudas-contacto */
+    /* estilos tarjetas Tienda */
+    /* titulo del precio */ }
+    .main-tienda .titulo-sitio,
+    .main-tienda .tienda-sitio,
+    .main-tienda .dudas-sitio,
+    .main-tienda .contacto-sitio,
+    .main-nosotros .titulo-sitio,
+    .main-nosotros .tienda-sitio,
+    .main-nosotros .dudas-sitio,
+    .main-nosotros .contacto-sitio,
+    .main-dudas .titulo-sitio,
+    .main-dudas .tienda-sitio,
+    .main-dudas .dudas-sitio,
+    .main-dudas .contacto-sitio,
+    .main-contacto .titulo-sitio,
+    .main-contacto .tienda-sitio,
+    .main-contacto .dudas-sitio,
+    .main-contacto .contacto-sitio {
+      font-size: 180%; }
+    .main-tienda .categoria-peces-frios,
+    .main-tienda .categoria-peces-tropicales,
+    .main-tienda .categoria-accesorios,
+    .main-nosotros .categoria-peces-frios,
+    .main-nosotros .categoria-peces-tropicales,
+    .main-nosotros .categoria-accesorios,
+    .main-dudas .categoria-peces-frios,
+    .main-dudas .categoria-peces-tropicales,
+    .main-dudas .categoria-accesorios,
+    .main-contacto .categoria-peces-frios,
+    .main-contacto .categoria-peces-tropicales,
+    .main-contacto .categoria-accesorios {
+      grid-template-columns: 1fr; }
+    .main-tienda .peces-frios img,
+    .main-tienda .peces-tropicales img,
+    .main-tienda .accesorios-peceras img,
+    .main-nosotros .peces-frios img,
+    .main-nosotros .peces-tropicales img,
+    .main-nosotros .accesorios-peceras img,
+    .main-dudas .peces-frios img,
+    .main-dudas .peces-tropicales img,
+    .main-dudas .accesorios-peceras img,
+    .main-contacto .peces-frios img,
+    .main-contacto .peces-tropicales img,
+    .main-contacto .accesorios-peceras img {
+      height: 13rem;
+      margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
+    .main-tienda .titulo-del-precio,
+    .main-nosotros .titulo-del-precio,
+    .main-dudas .titulo-del-precio,
+    .main-contacto .titulo-del-precio {
+      margin-top: 0.5rem;
+      margin-bottom: 0.80rem; }
+  /* mq de la pagina nosotros */
+  /* titulos de las paginas nosotros-tienda-dudas-contacto */
+  .main-nosotros {
+    /* estilo del contenido de la pagina nosotros*/
+    /* estilo de la imagen de la biografia */
+    /* pagina nosotros-video de la biografia */ }
+    .main-nosotros h1 {
+      margin-top: 0.1rem; }
+    .main-nosotros .biografia-sitio {
+      margin: 0.32rem 0.32rem 1.26rem 0.32rem;
+      text-align: center;
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      padding: 2.5rem; }
+    .main-nosotros .imagen-biografia img {
+      padding: 1rem;
+      border-radius: 3.15rem;
+      height: 450px; }
+    .main-nosotros .video-biografia {
+      width: 100%;
+      margin-right: 2rem;
+      border-radius: 3.15rem; }
+  /* mq de la pagina dudas */
+  .main-dudas {
+    /* pagina dudas */ }
+    .main-dudas .preguntas {
+      margin-bottom: 2rem; }
+  /* mq de la pagina contacto */
+  .main-contacto {
+    /* estilo del texto de contacto*/ }
+    .main-contacto .contacto-uno p {
+      font-size: 1rem;
+      margin: 2rem 3rem 2rem 3rem;
+      text-align: center; }
+    .main-contacto form {
+      /* estilo del formulario */ }
+      .main-contacto form .fieldset {
+        width: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        gap: 0.32rem; }
+        .main-contacto form .fieldset input {
+          width: 200%; }
+  /* estilos de la imagen de la ubicación del local */
+  .ubicacion-local img {
+    width: 60%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 2rem;
+    display: flex; } }
+
+/* mq para mobile de la pagina index */
+@media screen and (max-width: 768px) {
+  header {
+    /* estilos del nombre del logo */
+    /* logos de registrarse y carrito de compras */ }
+    header .nombre-logo {
+      margin-right: 0.4rem; }
+    header .logos {
+      display: none; }
+  .main-index {
+    /* slider principal mobie */
+    /* cinta de la home */ }
+    .main-index .slider-principal img {
+      display: none; }
+    .main-index .slider-principal-mobie img {
+      width: 100%;
+      height: 100%;
+      display: block; }
+    .main-index .cinta {
+      font-size: larger;
+      padding: 0.5rem; }
+  .section-index {
+    /* titulo de las categorias de la home */ }
+    .section-index .titulo-categorias {
+      margin: 0.2rem 0 1.1rem 0; }
+  .section-index-tarjetas {
+    /* estilos de las tarjetas Home */
+    flex-direction: column;
+    /* tamaño de las tarjetas de las categorias de la home */ }
+    .section-index-tarjetas .tarjeta-categoria {
+      width: 90%; }
+  /* estilos del footer */
+  footer {
+    padding: 2rem;
+    /* footer links */
+    /* estilo de los links de las paginas*/
+    /* footer iconos de los metodos de pagos */
+    /* estilo del titulos redes sociales */
+    /* footer legales */ }
+    footer .footer-links {
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem; }
+    footer .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; }
+    footer .iconos-pagos {
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+    footer .block-redes {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    footer .footer-legales {
+      margin-top: 4rem; }
+  /* mq para mobile de la pagina tienda */
+  .main-tienda,
+  .main-nosotros,
+  .main-dudas,
+  .main-contacto {
+    /* titulos de las paginas nosotros-tienda-dudas-contacto */
+    /* estilos tarjetas Tienda */
+    /* titulo del precio */ }
+    .main-tienda .titulo-sitio,
+    .main-tienda .tienda-sitio,
+    .main-tienda .dudas-sitio,
+    .main-tienda .contacto-sitio,
+    .main-nosotros .titulo-sitio,
+    .main-nosotros .tienda-sitio,
+    .main-nosotros .dudas-sitio,
+    .main-nosotros .contacto-sitio,
+    .main-dudas .titulo-sitio,
+    .main-dudas .tienda-sitio,
+    .main-dudas .dudas-sitio,
+    .main-dudas .contacto-sitio,
+    .main-contacto .titulo-sitio,
+    .main-contacto .tienda-sitio,
+    .main-contacto .dudas-sitio,
+    .main-contacto .contacto-sitio {
+      font-size: 160%; }
+    .main-tienda .categoria-peces-frios,
+    .main-tienda .categoria-peces-tropicales,
+    .main-tienda .categoria-accesorios,
+    .main-nosotros .categoria-peces-frios,
+    .main-nosotros .categoria-peces-tropicales,
+    .main-nosotros .categoria-accesorios,
+    .main-dudas .categoria-peces-frios,
+    .main-dudas .categoria-peces-tropicales,
+    .main-dudas .categoria-accesorios,
+    .main-contacto .categoria-peces-frios,
+    .main-contacto .categoria-peces-tropicales,
+    .main-contacto .categoria-accesorios {
+      grid-template-columns: 1fr; }
+    .main-tienda .peces-frios img,
+    .main-tienda .peces-tropicales img,
+    .main-tienda .accesorios-peceras img,
+    .main-nosotros .peces-frios img,
+    .main-nosotros .peces-tropicales img,
+    .main-nosotros .accesorios-peceras img,
+    .main-dudas .peces-frios img,
+    .main-dudas .peces-tropicales img,
+    .main-dudas .accesorios-peceras img,
+    .main-contacto .peces-frios img,
+    .main-contacto .peces-tropicales img,
+    .main-contacto .accesorios-peceras img {
+      height: 8rem;
+      margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
+    .main-tienda .titulo-del-precio,
+    .main-nosotros .titulo-del-precio,
+    .main-dudas .titulo-del-precio,
+    .main-contacto .titulo-del-precio {
+      margin-top: 0.5rem;
+      margin-bottom: 0.80rem; }
+  /* mq para mobile de la pagina nosotros */
+  .main-nosotros {
+    /* estilo del contenido de la pagina nosotros*/
+    /* estilo de la imagen de la biografia */
+    /* pagina nosotros-video de la biografia */ }
+    .main-nosotros .biografia-sitio {
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem; }
+    .main-nosotros .imagen-biografia img {
+      border-radius: 3.15rem;
+      width: 100%; }
+    .main-nosotros .video-biografia {
+      display: none; }
+  /* mq para mobile de la pagina dudas */
+  .main-dudas {
+    /* pagina dudas */ }
+    .main-dudas .preguntas {
+      margin: 2rem 4rem 3rem 4rem; }
+  /* mq para mobile de la pagina contacto */
+  .main-contacto {
+    /* estilo del texto de contacto*/ }
+    .main-contacto .contacto-uno p {
+      font-size: 1rem;
+      margin: 2rem 3rem 2rem 3rem;
+      text-align: center; }
+    .main-contacto form {
+      /* estilo del formulario */ }
+      .main-contacto form .fieldset {
+        width: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        gap: 0.32rem; }
+        .main-contacto form .fieldset input {
           width: 390%; }
   /* estilos de la imagen de la ubicación del local */
   .ubicacion-local img {
@@ -1272,18 +1979,18 @@ main {
     header .logos img {
       width: 1.4rem;
       height: 1.4rem; }
-  main {
+  .main-index {
     /* cinta de la home */ }
-    main .slider-principal img {
+    .main-index .slider-principal img {
       display: block; }
-    main .slider-principal-mobie img {
+    .main-index .slider-principal-mobie img {
       display: none; }
-    main .cinta {
+    .main-index .cinta {
       font-size: larger;
       padding: 0.5rem; }
-  section {
+  .section-index {
     /* titulo de las categorias de la home */ }
-    section .titulo-categorias {
+    .section-index .titulo-categorias {
       margin: 0.2rem 0 1.1rem 0; }
   /* estilos del footer */
   footer {
@@ -1311,75 +2018,109 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center; }
-  main section {
+  .main-tienda,
+  .main-nosotros,
+  .main-dudas,
+  .main-contacto {
     /* titulos de las paginas nosotros-tienda-dudas-contacto */
     /* estilos tarjetas Tienda */
     /* titulo del precio */ }
-    main section .titulo-sitio,
-    main section .tienda-sitio,
-    main section .dudas-sitio,
-    main section .contacto-sitio {
+    .main-tienda .titulo-sitio,
+    .main-tienda .tienda-sitio,
+    .main-tienda .dudas-sitio,
+    .main-tienda .contacto-sitio,
+    .main-nosotros .titulo-sitio,
+    .main-nosotros .tienda-sitio,
+    .main-nosotros .dudas-sitio,
+    .main-nosotros .contacto-sitio,
+    .main-dudas .titulo-sitio,
+    .main-dudas .tienda-sitio,
+    .main-dudas .dudas-sitio,
+    .main-dudas .contacto-sitio,
+    .main-contacto .titulo-sitio,
+    .main-contacto .tienda-sitio,
+    .main-contacto .dudas-sitio,
+    .main-contacto .contacto-sitio {
       font-size: 180%; }
-    main section .categoria-peces-frios,
-    main section .categoria-peces-tropicales,
-    main section .categoria-accesorios {
+    .main-tienda .categoria-peces-frios,
+    .main-tienda .categoria-peces-tropicales,
+    .main-tienda .categoria-accesorios,
+    .main-nosotros .categoria-peces-frios,
+    .main-nosotros .categoria-peces-tropicales,
+    .main-nosotros .categoria-accesorios,
+    .main-dudas .categoria-peces-frios,
+    .main-dudas .categoria-peces-tropicales,
+    .main-dudas .categoria-accesorios,
+    .main-contacto .categoria-peces-frios,
+    .main-contacto .categoria-peces-tropicales,
+    .main-contacto .categoria-accesorios {
       grid-template-columns: 1fr; }
-    main section .peces-frios img,
-    main section .peces-tropicales img,
-    main section .accesorios-peceras img {
+    .main-tienda .peces-frios img,
+    .main-tienda .peces-tropicales img,
+    .main-tienda .accesorios-peceras img,
+    .main-nosotros .peces-frios img,
+    .main-nosotros .peces-tropicales img,
+    .main-nosotros .accesorios-peceras img,
+    .main-dudas .peces-frios img,
+    .main-dudas .peces-tropicales img,
+    .main-dudas .accesorios-peceras img,
+    .main-contacto .peces-frios img,
+    .main-contacto .peces-tropicales img,
+    .main-contacto .accesorios-peceras img {
       height: 13rem;
       margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
-    main section .titulo-del-precio {
+    .main-tienda .titulo-del-precio,
+    .main-nosotros .titulo-del-precio,
+    .main-dudas .titulo-del-precio,
+    .main-contacto .titulo-del-precio {
       margin-top: 0.5rem;
       margin-bottom: 0.80rem; }
   /* mq de la pagina nosotros */
   /* titulos de las paginas nosotros-tienda-dudas-contacto */
-  main {
+  .main-nosotros {
     /* estilo del contenido de la pagina nosotros*/
-    /* estilo de la imagen de la biografia */ }
-    main h1 {
+    /* estilo de la imagen de la biografia */
+    /* pagina nosotros-video de la biografia */ }
+    .main-nosotros h1 {
       margin-top: 0.1rem; }
-    main .biografia-sitio {
+    .main-nosotros .biografia-sitio {
       margin: 0.32rem 0.32rem 1.26rem 0.32rem;
       text-align: center;
       font-size: 1rem;
       display: flex;
       flex-direction: column;
       padding: 2.5rem; }
-    main .imagen-biografia img {
+    .main-nosotros .imagen-biografia img {
       padding: 1rem;
       border-radius: 3.15rem;
       height: 450px; }
-    main section {
-      /* pagina nosotros-video de la biografia */ }
-      main section .video-biografia {
-        width: 100%;
-        margin-right: 2rem;
-        border-radius: 3.15rem; }
+    .main-nosotros .video-biografia {
+      width: 100%;
+      margin-right: 2rem;
+      border-radius: 3.15rem; }
   /* mq de la pagina dudas */
-  main {
+  .main-dudas {
     /* pagina dudas */ }
-    main .preguntas {
+    .main-dudas .preguntas {
       margin-bottom: 2rem; }
   /* mq de la pagina contacto */
-  main {
+  .main-contacto {
     /* estilo del texto de contacto*/ }
-    main .contacto-uno p {
+    .main-contacto .contacto-uno p {
       font-size: 1rem;
       margin: 2rem 3rem 2rem 3rem;
       text-align: center; }
-    main form {
+    .main-contacto form {
       /* estilo del formulario */ }
-      main form .fieldset {
+      .main-contacto form .fieldset {
         width: 12%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: auto;
-        border: none;
         gap: 0.32rem; }
-        main form .fieldset input {
+        .main-contacto form .fieldset input {
           width: 200%; }
   /* estilos de la imagen de la ubicación del local */
   .ubicacion-local img {
@@ -1399,27 +2140,27 @@ main {
       margin-right: 0.4rem; }
     header .logos {
       display: none; }
-  main {
+  .main-index {
     /* slider principal mobie */
     /* cinta de la home */ }
-    main .slider-principal img {
+    .main-index .slider-principal img {
       display: none; }
-    main .slider-principal-mobie img {
+    .main-index .slider-principal-mobie img {
       width: 100%;
       height: 100%;
       display: block; }
-    main .cinta {
+    .main-index .cinta {
       font-size: larger;
       padding: 0.5rem; }
-  section {
-    /* titulo de las categorias de la home */
-    /* estilos de las tarjetas Home */
-    /* tamaño de las tarjetas de las categorias de la home */ }
-    section .titulo-categorias {
+  .section-index {
+    /* titulo de las categorias de la home */ }
+    .section-index .titulo-categorias {
       margin: 0.2rem 0 1.1rem 0; }
-    section .categorias {
-      flex-direction: column; }
-    section .tarjeta-categoria {
+  .section-index-tarjetas {
+    /* estilos de las tarjetas Home */
+    flex-direction: column;
+    /* tamaño de las tarjetas de las categorias de la home */ }
+    .section-index-tarjetas .tarjeta-categoria {
       width: 90%; }
   /* estilos del footer */
   footer {
@@ -1452,67 +2193,101 @@ main {
     footer .footer-legales {
       margin-top: 4rem; }
   /* mq para mobile de la pagina tienda */
-  main div {
-    /* titulos de las paginas nosotros-tienda-dudas-contacto */ }
-    main div .titulo-sitio,
-    main div .tienda-sitio,
-    main div .dudas-sitio,
-    main div .contacto-sitio {
+  .main-tienda,
+  .main-nosotros,
+  .main-dudas,
+  .main-contacto {
+    /* titulos de las paginas nosotros-tienda-dudas-contacto */
+    /* estilos tarjetas Tienda */
+    /* titulo del precio */ }
+    .main-tienda .titulo-sitio,
+    .main-tienda .tienda-sitio,
+    .main-tienda .dudas-sitio,
+    .main-tienda .contacto-sitio,
+    .main-nosotros .titulo-sitio,
+    .main-nosotros .tienda-sitio,
+    .main-nosotros .dudas-sitio,
+    .main-nosotros .contacto-sitio,
+    .main-dudas .titulo-sitio,
+    .main-dudas .tienda-sitio,
+    .main-dudas .dudas-sitio,
+    .main-dudas .contacto-sitio,
+    .main-contacto .titulo-sitio,
+    .main-contacto .tienda-sitio,
+    .main-contacto .dudas-sitio,
+    .main-contacto .contacto-sitio {
       font-size: 160%; }
-    main div section {
-      /* estilos tarjetas Tienda */
-      /* titulo del precio */ }
-      main div section .categoria-peces-frios,
-      main div section .categoria-peces-tropicales,
-      main div section .categoria-accesorios {
-        grid-template-columns: 1fr; }
-      main div section .peces-frios img,
-      main div section .peces-tropicales img,
-      main div section .accesorios-peceras img {
-        height: 8rem;
-        margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
-      main div section .titulo-del-precio {
-        margin-top: 0.5rem;
-        margin-bottom: 0.80rem; }
+    .main-tienda .categoria-peces-frios,
+    .main-tienda .categoria-peces-tropicales,
+    .main-tienda .categoria-accesorios,
+    .main-nosotros .categoria-peces-frios,
+    .main-nosotros .categoria-peces-tropicales,
+    .main-nosotros .categoria-accesorios,
+    .main-dudas .categoria-peces-frios,
+    .main-dudas .categoria-peces-tropicales,
+    .main-dudas .categoria-accesorios,
+    .main-contacto .categoria-peces-frios,
+    .main-contacto .categoria-peces-tropicales,
+    .main-contacto .categoria-accesorios {
+      grid-template-columns: 1fr; }
+    .main-tienda .peces-frios img,
+    .main-tienda .peces-tropicales img,
+    .main-tienda .accesorios-peceras img,
+    .main-nosotros .peces-frios img,
+    .main-nosotros .peces-tropicales img,
+    .main-nosotros .accesorios-peceras img,
+    .main-dudas .peces-frios img,
+    .main-dudas .peces-tropicales img,
+    .main-dudas .accesorios-peceras img,
+    .main-contacto .peces-frios img,
+    .main-contacto .peces-tropicales img,
+    .main-contacto .accesorios-peceras img {
+      height: 8rem;
+      margin: 0.63rem 0.26rem 1.32rem 0.15rem; }
+    .main-tienda .titulo-del-precio,
+    .main-nosotros .titulo-del-precio,
+    .main-dudas .titulo-del-precio,
+    .main-contacto .titulo-del-precio {
+      margin-top: 0.5rem;
+      margin-bottom: 0.80rem; }
   /* mq para mobile de la pagina nosotros */
-  main {
+  .main-nosotros {
     /* estilo del contenido de la pagina nosotros*/
     /* estilo de la imagen de la biografia */
     /* pagina nosotros-video de la biografia */ }
-    main .biografia-sitio {
+    .main-nosotros .biografia-sitio {
       font-size: 1rem;
       display: flex;
       flex-direction: column;
       padding: 1.5rem; }
-    main .imagen-biografia img {
+    .main-nosotros .imagen-biografia img {
       border-radius: 3.15rem;
       width: 100%; }
-    main .video-biografia {
+    .main-nosotros .video-biografia {
       display: none; }
   /* mq para mobile de la pagina dudas */
-  main {
+  .main-dudas {
     /* pagina dudas */ }
-    main .preguntas p {
+    .main-dudas .preguntas {
       margin: 2rem 4rem 3rem 4rem; }
   /* mq para mobile de la pagina contacto */
-  main {
+  .main-contacto {
     /* estilo del texto de contacto*/ }
-    main .contacto-uno p {
+    .main-contacto .contacto-uno p {
       font-size: 1rem;
       margin: 2rem 3rem 2rem 3rem;
       text-align: center; }
-    main form {
+    .main-contacto form {
       /* estilo del formulario */ }
-      main form .fieldset {
+      .main-contacto form .fieldset {
         width: 12%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: auto;
-        border: none;
         gap: 0.32rem; }
-        main form .fieldset input {
+        .main-contacto form .fieldset input {
           width: 390%; }
   /* estilos de la imagen de la ubicación del local */
   .ubicacion-local img {

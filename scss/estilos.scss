@@ -20,11 +20,11 @@ body {
 
 
 //importar archivos
+@import "header/header";
+@import "footer/footer";
 @import "index/index";
 @import "tienda/tienda";
 @import "nosotros/nosotros";
 @import "dudas/dudas";
+@import "contacto/contacto";
 @import "utilidades/mq";
-
-
-

@@ -2,7 +2,10 @@
 @import "../variables/mixin";
 @import "../variables/extend";
 
-main {
+.main-tienda,
+.main-nosotros,
+.main-dudas,
+.main-contacto {
 
     /* titulos de las paginas */
     h1 {
@@ -22,60 +25,57 @@ main {
         }
     }
 
-    div {
 
-        /* estilos Tienda */
-        .tienda-categorias {
-            margin-bottom: 1.26rem;
-        }
+    /* estilos Tienda */
+    .tienda-categorias {
+        margin-bottom: 1.26rem;
+    }
 
-        /* estilos de banners de la Tienda */
-        .banner-tienda-uno img,
-        .banner-tienda-dos img,
-        .banner-tienda-tres img {
-            @include medidas (100%, 100%)
-        }
-
+    /* estilos de banners de la Tienda */
+    .banner-tienda-uno img,
+    .banner-tienda-dos img,
+    .banner-tienda-tres img {
+        @include medidas (100%, 100%)
+    }
 
 
 
-        /* estilos tarjetas Tienda */
-        .categoria-peces-frios,
-        .categoria-peces-tropicales,
-        .categoria-accesorios {
-            display: grid;
-            grid-template-columns: 0.4fr 0.4fr 0.4fr;
-            grid-template-rows: 1fr;
-            padding: 2rem;
-            justify-items: center;
-        }
+    /* estilos tarjetas Tienda */
+    .categoria-peces-frios,
+    .categoria-peces-tropicales,
+    .categoria-accesorios {
+        display: grid;
+        grid-template-columns: 0.4fr 0.4fr 0.4fr;
+        grid-template-rows: 1fr;
+        padding: 2rem;
+        justify-items: center;
+    }
 
-        .peces-frios,
-        .peces-tropicales,
-        .accesorios-peceras {
-            img {
-                height: 15rem;
-            }
-
-        }
-
-
-        /* titulo del producto */
-        .descripcion-producto {
-            text-align: center;
-            font-size: 1.26rem;
-            margin-bottom: 0.32rem;
-            @extend %letra;
-        }
-
-        /* titulo del precio */
-        .titulo-del-precio {
-            text-align: center;
-            margin-bottom: 0.9rem;
-            font-weight: bolder;
+    .peces-frios,
+    .peces-tropicales,
+    .accesorios-peceras {
+        img {
+            height: 15rem;
         }
 
     }
+
+
+    /* titulo del producto */
+    .descripcion-producto {
+        text-align: center;
+        font-size: 1.26rem;
+        margin-bottom: 0.32rem;
+        @extend %letra;
+    }
+
+    /* titulo del precio */
+    .titulo-del-precio {
+        text-align: center;
+        margin-bottom: 0.9rem;
+        font-weight: bolder;
+    }
+
 }
 
-@import "../utilidades/mq";
+@import "utilidades/mq.scss";

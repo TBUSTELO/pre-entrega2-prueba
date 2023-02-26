@@ -1,4 +1,4 @@
-main {
+.main-nosotros {
 
     /* estilo del contenido de la pagina nosotros*/
     .biografia-sitio {
@@ -16,14 +16,13 @@ main {
         height: 450px;
     }
 
-    section {
 
-        /* pagina nosotros-video de la biografia */
-        .video-biografia {
-            width: 100%;
-            margin-right: 2rem;
-        }
+    /* pagina nosotros-video de la biografia */
+    .video-biografia {
+        width: 100%;
+        margin-right: 2rem;
     }
+
 }
 
-@import "../utilidades/mq";
+@import "utilidades/mq.scss";

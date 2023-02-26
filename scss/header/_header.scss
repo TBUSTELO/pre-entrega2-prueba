@@ -1,0 +1,60 @@
+@import "../variables/variables";
+@import "../variables/mixin";
+@import "../variables/extend";
+
+
+
+/* color del header */
+header {
+    background: $color-principal;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+
+    nav {
+
+        /* barra de navegacion */
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1.1rem;
+
+            li {
+                background: $color-secundario;
+                padding: 0.40rem;
+                border-radius: 0.80rem;
+                margin-top: 1.26rem;
+                @extend %letra;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    /* estilos del nombre principal de la pagina*/
+    .nombre-logo {
+        @extend %letra;
+        font-size: 120%;
+        margin-top: 0.5rem;
+        margin-right: 0.7rem;
+        text-decoration: none;
+        color: black;
+    }
+
+    /* estilos para la barra de navegacion movile */
+    .barra-de-navegacion {
+        width: 100%;
+    }
+
+    /* logos de registrarse y carrito de compras */
+    .logos {
+        @include flex;
+        gap: 1.6rem;
+    }
+
+    .logos img {
+        @include medidas (1.8rem, 1.8rem)
+    }
+}

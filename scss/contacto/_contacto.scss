@@ -1,6 +1,6 @@
 @import "../variables/mixin";
 
-main {
+.main-contacto {
 
     /* pagina contacto */
     .contacto-uno p {
@@ -17,7 +17,6 @@ main {
             @include flex;
             flex-direction: column;
             margin-left: 21rem;
-            border: none;
             gap: 0.32rem;
             margin-top: 1.26rem;
             margin-bottom: 1.89rem;
@@ -48,4 +47,4 @@ main {
     }
 }
 
-@import "../utilidades/mq";
+@import "utilidades/mq.scss";
